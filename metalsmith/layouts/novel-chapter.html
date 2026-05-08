@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script>document.write('<base href="'+ (window.location.hostname === 'olafjanssen.github.io' ? '/ttpotm/' : '/') + '">');</script>
     <!-- Matomo -->
     <script type="application/javascript">
         var _paq = window._paq = window._paq || [];
@@ -46,18 +47,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="canonical" href="{{ url }}{{ path }}/" />
-    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/apple-touch-iphone.png" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-iphone.png" />
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/css/topic.css">
+    <link rel="stylesheet" type="text/css" href="css/topic.css">
 
 </head>
 
 <body class="typeset">
 
-    <a href="/"><img src="/img/title-01.png" alt="The Toki Ponist on the Mountain main page" id="title-img"></a>
+    <a href="./"><img src="img/title-01.png" alt="The Toki Ponist on the Mountain main page" id="title-img"></a>
 
     <section class="project-content">
         <article class="project-full">
@@ -66,8 +67,8 @@
             </h1>
 
             <p class="project-full-blurp">
-                You are reading a chapter of the novel <a href="/novels/">The Toki Ponist on the Mountain</a>.
-                The novel is part of a larger universe, explore the rest <a href="/">here</a>. You can also read this
+                You are reading a chapter of the novel <a href="novels/">The Toki Ponist on the Mountain</a>.
+                The novel is part of a larger universe, explore the rest <a href="./">here</a>. You can also read this
                 story on <a href="https://www.wattpad.com/story/239611818-the-toki-ponist-on-the-mountain"
                     target="_blank">WattPad</a>
             </p>
@@ -82,7 +83,7 @@
                 {{{ contents }}}
 
                 {{#if next}}
-                <a href="/{{ next.url }}{{ next.path }}/">Read the next chapter</a>
+                <a href="{{ next.url }}{{ next.path }}/">Read the next chapter</a>
                 {{else}}
                 <b>Read the next chapter when it appears, soon.</b>
                 {{/if}}
@@ -92,7 +93,7 @@
         </section>
         <div class="nav-bar navbar-dark p-3 mu-3" style="background-color: black;">
             <span class="navbar-text">
-                <a class="nav-link" href="/disclaimer/">Disclaimer | disclosure | self-critique</a>
+                <a class="nav-link" href="disclaimer/">Disclaimer | disclosure | self-critique</a>
             </span>
             <span>
                 <script type='application/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>

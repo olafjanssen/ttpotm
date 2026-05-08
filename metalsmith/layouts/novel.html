@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script>document.write('<base href="'+ (window.location.hostname === 'olafjanssen.github.io' ? '/ttpotm/' : '/') + '">');</script>
     <!-- Matomo -->
     <script type="application/javascript">
         var _paq = window._paq = window._paq || [];
@@ -49,16 +50,16 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     <link rel="canonical" href="{{ url }}{{ path }}/" />
-    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/apple-touch-iphone.png" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-iphone.png" />
 
-    <link rel="stylesheet" type="text/css" href="/css/portal.css">
+    <link rel="stylesheet" type="text/css" href="css/portal.css">
 </head>
 
 <body class="typeset">
     <div class="container">
         <div class="jumbotron row p-3 p-md-5 text-dark rounded bg-transparent" id="main-jumbo">
-            <div class="col-md-6 px-0"><a href="/"><img src="/img/title-01.png" class="img-fluid"
+            <div class="col-md-6 px-0"><a href="./"><img src="img/title-01.png" class="img-fluid"
                         alt="The Toki Ponist on the Mountain Logo"></a></div>
             <div class="col-md-6 px-0 align-self-center">
                 <p class="lead">
@@ -68,7 +69,7 @@
                     <strong>The
                         Toki Ponist on the Mountain</strong>.
                 </p>
-                <p class="lead">You have reached the 'novel' entrance, explore the rest <a href="/">here</a>.</p>
+                <p class="lead">You have reached the 'novel' entrance, explore the rest <a href="./">here</a>.</p>
                 <script type='application/javascript' src='https://ko-fi.com/widgets/widget_2.js'>
                 </script>
                 <script type='application/javascript'>
@@ -88,14 +89,14 @@
                     <h5>Prologue <code>open</code></h5>
                     <ul>
                         {{#each collections.novel}}{{#if prologue}}
-                        <li><a class="text-dark" href="/{{ path }}/">{{ title }}</a></li>
+                        <li><a class="text-dark" href="{{ path }}/">{{ title }}</a></li>
                         {{/if}}{{/each}}
                     </ul>
 
                     <h5>Part 1: The Search <code>nasin</code></h5>
                     <ul>
                         {{#each collections.novel}}{{#if part1}}
-                        <li><a class="text-dark" href="/{{ path }}/">{{ title }}</a></li>
+                        <li><a class="text-dark" href="{{ path }}/">{{ title }}</a></li>
                         {{/if}}{{/each}}
                     </ul>
 
@@ -129,7 +130,7 @@
                     <h5>PIQUED <code>nasin</code></h5>
                     <ul>
                         {{#each collections.novel_piqued}}
-                        <li><a class="text-dark" href="/{{ path }}/">{{ title }}</a></li>
+                        <li><a class="text-dark" href="{{ path }}/">{{ title }}</a></li>
                         {{/each}}
                     </ul>
 
@@ -138,18 +139,18 @@
                 <aside class="col-md-4 blog-sidebar">
                     <div class="card flex-md-row tp-card-border mb-2">
                         <div class="card-body">
-                            <a class="text-dark" href="/games/">
+                            <a class="text-dark" href="games/">
                                 <h3 class="card-title"><code>ilo musi</code> ~ games</h3>
                                 <p class="card-text">Enter the universe in a Point & Click Adventure fashion; and play
                                     the first
                                     escape game episode now, linked to the novel.</p>
-                                <div class="my-card-img" style="background-image: url(/img/topic-home.png);"></div>
+                                <div class="my-card-img" style="background-image: url(img/topic-home.png);"></div>
                             </a>
                         </div>
                     </div>
 
                     <h3>About the author</h3>
-                    <img src="/img/self-portrait-01.png" alt="author"
+                    <img src="img/self-portrait-01.png" alt="author"
                         class="img-thumbnail border-0 col-md-10 col-offset-2">
                     <p><strong>Olaf Janssen</strong> is an author like he is many other things. With a PhD in
                         nanophysics and

@@ -25,7 +25,7 @@ Play the original first part for free here:
 
 <a href="https://nullelement.itch.io/ttpotm-coming-home"><img src="../img/game/itch_cookie_free_placeholder.png" width="552" height="167" style="image-rendering: -webkit-optimize-contrast;" alt="Play TTPotM game on Itch.io"></a>
 
-Also, don't forget to explore the wisdom of The Toki Ponist [here](/).
+Also, don't forget to explore the wisdom of The Toki Ponist [here](./).
 
 Now the time is ripe to release, step by step, pieces of the novel and new episodes of this game.
 

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script>document.write('<base href="'+ (window.location.hostname === 'olafjanssen.github.io' ? '/ttpotm/' : '/') + '">');</script>
     <!-- Matomo -->
     <script type="application/javascript">
         var _paq = window._paq = window._paq || [];
@@ -49,18 +50,18 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     <link rel="canonical" href="{{ url }}" />
-    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/apple-touch-iphone.png" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-iphone.png" />
 
-    <link rel="stylesheet" type="text/css" href="/css/portal.css">
-    <script src="/js/fuse.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/portal.css">
+    <script src="js/fuse.min.js"></script>
 </head>
 
 <body class="typeset">
     <div class="container">
         <div class="jumbotron row p-3 p-md-5 text-dark rounded bg-transparent" id="main-jumbo">
             <div class="col-md-6 px-0">
-                <h1><img src="/img/title-01.png" class="img-fluid" alt="The Toki Ponist on the Mountain"></h1>
+                <h1><img src="img/title-01.png" class="img-fluid" alt="The Toki Ponist on the Mountain"></h1>
             </div>
             <div class="col-md-6 px-0 align-self-center">
                 <p class="lead">
@@ -85,23 +86,23 @@
         <div class="card-deck mb-5">
             <div class="card flex-md-row tp-card-border">
                 <div class="card-body">
-                    <a class="text-dark" href="/novels/">
+                    <a class="text-dark" href="novels/">
                         <h3 class="card-title"><code>lipu mute</code> ~ novels</h3>
                         <p class="card-text">Follow the progress of the origin story of The Toki Ponist on the Mountain
                             in published and upcoming novels.</p>
-                        <div class="my-card-img" style="background-image: url(/img/wanderlust-girl-witha-view.png);">
+                        <div class="my-card-img" style="background-image: url(img/wanderlust-girl-witha-view.png);">
                         </div>
                     </a>
                 </div>
             </div>
             <div class="card flex-md-row tp-card-border">
                 <div class="card-body">
-                    <a class="text-dark" href="/games/">
+                    <a class="text-dark" href="games/">
                         <h3 class="card-title"><code>ilo musi</code> ~ games</h3>
                         <p class="card-text">Enter the universe in a Point & Click Adventure fashion; and play the first
                             escape
                             game episode now.</p>
-                        <div class="my-card-img" style="background-image: url(/img/topic-home.png);"></div>
+                        <div class="my-card-img" style="background-image: url(img/topic-home.png);"></div>
                     </a>
                 </div>
             </div>
@@ -113,7 +114,7 @@
                 {{#each collections.topics}}
                 <div class="card bg-transparent border-0" data-tag="{{tag}}">
                     <div class="card-body">
-                        <a class="text-dark" href="/topics/{{ tag }}/">
+                        <a class="text-dark" href="topics/{{ tag }}/">
                             <h4 class="card-title">{{ title }}</h4>
                             <p class="card-text">{{{ description }}}</p>
                         </a>
@@ -129,7 +130,7 @@
                 {{#each collections.faq}}{{#if tag}}
                 <div class="card bg-transparent border-0">
                     <div class="card-body">
-                        <a class="text-dark" href="/faq/{{ tag }}/">
+                        <a class="text-dark" href="faq/{{ tag }}/">
                             <h4 class="card-title">{{ question }}</h4>
                             <p class="card-text">{{{ shortanswer }}}</p>
                         </a>
@@ -145,7 +146,7 @@
                 {{#each collections.tokiNasinNasa}}{{#if tag}}
                 <div class="card bg-transparent border-0">
                     <div class="card-body">
-                        <a class="text-dark" href="/tokinasinnasa/{{ tag }}/">
+                        <a class="text-dark" href="tokinasinnasa/{{ tag }}/">
                             <h4 class="card-title">{{ title }}</h4>
                             <p class="card-text">{{{ description }}}</p>
                         </a>
@@ -161,7 +162,7 @@
         <!--            {{#each collections.aforisms}}{{#if tag}}-->
         <!--            <div class="card bg-transparent border-0">-->
         <!--                <div class="card-body">-->
-        <!--                    <a class="text-dark" href="/aforisms/{{ tag }}/">-->
+        <!--                    <a class="text-dark" href="aforisms/{{ tag }}/">-->
         <!--                    <h7 class="card-title">{{ description }}</h7>-->
         <!--                    </a>-->
         <!--                </div>-->
@@ -173,7 +174,7 @@
     </div>
     <div class="nav-bar navbar-dark p-3 mu-3" style="background-color: black;">
         <span class="navbar-text">
-            <a class="nav-link" href="/disclaimer/">Disclaimer | disclosure | self-critique</a>
+            <a class="nav-link" href="disclaimer/">Disclaimer | disclosure | self-critique</a>
         </span>
         <span>
             <script type='application/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
