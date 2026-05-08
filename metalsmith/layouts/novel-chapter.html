@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Matomo -->
+    <script type="application/javascript">
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        // Call disableCookies before calling trackPageView 
+        _paq.push(['disableCookies']);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//ttpotm.com/matomo/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d = document,
+                g = d.createElement('script'),
+                s = d.getElementsByTagName('script')[0];
+            g.type = 'application/javascript';
+            g.async = true;
+            g.src = u + 'matomo.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+    <title>
+        The Toki Ponist on the Mountain novel - {{ title }}
+    </title>
+    <meta name="description" content="{{ description }}">
+
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{{url}}img/{{ thumb }}">
+    <meta property="og:site_name" content="The Toki Ponist on the Mountain">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:url" content="{{ url }}{{ path }}/">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content=@nullelement" />
+    <meta name="twitter:title" content="{{ title }}" />
+    <meta name="twitter:description" content="{{ description }}" />
+    <meta name="twitter:image" content="{{url}}img/{{ thumb }}" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="canonical" href="{{ url }}{{ path }}/" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-iphone.png" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/topic.css">
+
+</head>
+
+<body class="typeset">
+
+    <a href="/"><img src="/img/title-01.png" alt="The Toki Ponist on the Mountain main page" id="title-img"></a>
+
+    <section class="project-content">
+        <article class="project-full">
+            <h1>
+                The Toki Ponist on the Mountain<br> {{ title }}
+            </h1>
+
+            <p class="project-full-blurp">
+                You are reading a chapter of the novel <a href="/novels/">The Toki Ponist on the Mountain</a>.
+                The novel is part of a larger universe, explore the rest <a href="/">here</a>. You can also read this
+                story on <a href="https://www.wattpad.com/story/239611818-the-toki-ponist-on-the-mountain"
+                    target="_blank">WattPad</a>
+            </p>
+
+            <p class="project-full-date">
+                <span class="date">{{ date }}</span>
+            </p>
+
+            <hr>
+
+            <div id="cnt-{{ tag }}" class="project-full-content">
+                {{{ contents }}}
+
+                {{#if next}}
+                <a href="/{{ next.url }}{{ next.path }}/">Read the next chapter</a>
+                {{else}}
+                <b>Read the next chapter when it appears, soon.</b>
+                {{/if}}
+
+            </div>
+        </article>
+        </section>
+        <div class="nav-bar navbar-dark p-3 mu-3" style="background-color: black;">
+            <span class="navbar-text">
+                <a class="nav-link" href="/disclaimer/">Disclaimer | disclosure | self-critique</a>
+            </span>
+            <span>
+                <script type='application/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+                <script type='application/javascript'>
+                    kofiwidget2.init('Support Me on Ko-fi', '#46b798', 'W7W4Y6U0');
+                    kofiwidget2.draw();
+                </script>
+            </span>
+            <span class="navbar-text self-right">
+                <a class="" href="https://www.facebook.com/gaming/ttpotm">Facebook</a> | 
+                <a class="" href="https://twitter.com/TTPotM" target="_blank">Twitter</a> | 
+                <a class="" href="https://www.instagram.com/ttpotm/" target="_blank">Instagram</a>
+            </span>    
+            <span class="navbar-text self-right">
+                The Toki Ponist on the Mountain by <a href="https://awokenwell.com" target="_blank">Awoken Well</a>, 2021
+            </span>
+        </div>    
+</body>
+</html>

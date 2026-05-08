@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^ttpotm.com$
+RewriteRule ^(.*)$ https://ttpotm.com/$1 [R=301,L]
+
+ErrorDocument 404 /error404/
+ErrorDocument 403 /error404/
+
+Options -Indexes

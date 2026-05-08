@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Matomo -->
+    <script type="application/javascript">
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        // Call disableCookies before calling trackPageView 
+        _paq.push(['disableCookies']);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//ttpotm.com/matomo/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d = document,
+                g = d.createElement('script'),
+                s = d.getElementsByTagName('script')[0];
+            g.type = 'application/javascript';
+            g.async = true;
+            g.src = u + 'matomo.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+    <title>
+        {{ title }}
+    </title>
+    <meta name="description" content="{{ description }}">
+
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{{url}}img/about.jpg">
+    <meta property="og:site_name" content="The Toki Ponist on the Mountain">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:url" content="{{ url }}{{ path }}/">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content=@nullelement" />
+    <meta name="twitter:title" content="{{ title }}" />
+    <meta name="twitter:description" content="{{ description }}" />
+    <meta name="twitter:image" content="{{url}}img/{{ thumb }}" />
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="canonical" href="{{ url }}{{ path }}/" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-iphone.png" />
+
+    <link rel="stylesheet" type="text/css" href="/css/portal.css">
+</head>
+
+<body class="typeset">
+    <div class="container">
+        <div class="jumbotron row p-3 p-md-5 text-dark rounded bg-transparent" id="main-jumbo">
+            <div class="col-md-6 px-0"><a href="/"><img src="/img/title-01.png" class="img-fluid"
+                        alt="The Toki Ponist on the Mountain Logo"></a></div>
+            <div class="col-md-6 px-0 align-self-center">
+                <p class="lead">
+                    Everybody needs a guru. Therefore, I need one too. Fortune has it that I am one, so I decided to be
+                    my
+                    own guru. In games, novels, and scriptures it will be unveiled, one step at a time, how I became
+                    <b>The Toki Ponist on the Mountain</b>.
+                </p>
+                <p class="lead">You have reached the 'game' entrance, explore the rest <a href="/">here</a>.</p>
+            </div>
+        </div>
+
+        <main role="main" class="container">
+            <div class="row">
+                <div class="col-md-8 content-main">
+                    {{{contents}}}
+                </div>
+
+                <aside class="col-md-4 blog-sidebar">
+                    <div class="card flex-md-row tp-card-border mb-2">
+                    </div>
+            </div>
+
+            </aside>
+    </div>
+
+    </main>
+
+</html>

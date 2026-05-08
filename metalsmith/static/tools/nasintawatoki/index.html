@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ilo Nasintawatoki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/tp-cl.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+</header>
+
+<div class="container">
+    <div class="accordion" id="accordionExample">
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body mb-0 pb-0">
+                <div class="jumbotron row text-dark rounded bg-transparent mb-0 pb-0">
+                    <!--<div class="col-md-6 px-0"><a href="/"><img src="img/title-01.png" class="img-fluid"></a>-->
+                    <!--</div>-->
+                    <div class="col-md-6 offset-md-3 align-self-center">
+                        <h4 class="text-center mb-5">
+                            <code>ilo Nasintawatoki</code>
+                        </h4>
+
+                        <p>This is a playful and modestly addictive <code>toki pona</code> learning app. It cleverly picks sentences from the <a href="https://tatoeba.org/eng" target="_blank">tatoeba.org</a> database, based on your learning progress and your preferred learning strategy.</p>
+                    </div>
+                    <hr class="col-md-12">
+                    <div class="col-md-6">
+                        <h3>Learning strategies</h3>
+                        <p>Choose your own strategy, from slow but easy learning towards fast but harder learning.</p>
+                        <form class="m-4">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="methodRadio4" name="methodRadio" data-method="short-sentences"
+                                       class="custom-control-input">
+                                <label class="custom-control-label" for="methodRadio4">Prefer short sentences</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="methodRadio3" name="methodRadio" data-method="explore-concepts"
+                                       class="custom-control-input">
+                                <label class="custom-control-label" for="methodRadio3">Prefer exploring known
+                                    concepts (default)</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="methodRadio2" name="methodRadio" data-method="fast-vocabulary"
+                                       class="custom-control-input">
+                                <label class="custom-control-label" for="methodRadio2">New vocabulary first</label>
+                            </div>
+                            <!--<div class="custom-control custom-radio">-->
+                                <!--<input type="radio" id="methodRadio1" name="methodRadio" data-method="quaint-sentences"-->
+                                       <!--class="custom-control-input">-->
+                                <!--<label class="custom-control-label" for="methodRadio1">Quaint sentences-->
+                                    <!--first</label>-->
+                            <!--</div>-->
+                        </form>
+                        <p>If you disagree with a solution, report the sentence using the <em>report</em> button or
+                            improve the <a href="https://tatoeba.org/eng" target="_blank">tatoeba.org</a> database directly on their site.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Progress</h3>
+                        <p>Your progress is stored in the browser's so-called <em>localStorage</em> which will persist
+                            until you clear your cache. To more safely store your progress, and for the
+                            opportunity to continue on a different device, click here:</p>
+                        <button id="mail-button" class="btn btn-primary ml-auto mr-auto mb-4">Send me my progress link
+                        </button>
+                        <p>I have decided not to implement an account system because I have no intention to safeguard,
+                            mine
+                            or sell your data, or ask for your e-mail address for no reason.
+                        </p>
+                    </div>
+                    <hr class="col-md-12">
+                    <button data-toggle="collapse" class="btn btn-link ml-auto mr-auto text-center"
+                            data-target="#collapseOne">[hide info and play]
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card-body text-center p-2" id="headingOne">
+            <button class="btn btn-link p-0" type="button" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="false" aria-controls="collapseOne">[show more info]
+            </button>
+        </div>
+    </div>
+</div>
+<div class="container mb-5" id="problem">
+</div>
+
+<div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="reportModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Report a mistake with this sentence</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <textarea class="form-control" id="report-text"
+                                  placeholder="(Optional) describe what is wrong."></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                <button type="button" class="btn btn-primary" id="report-send-button">send</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/helper.js"></script>
+<script src="js/learnerdata.js"></script>
+<script src="js/learningmethod.js"></script>
+<script src="js/corpuslearning.js"></script>
+<script src="js/loadsave.js"></script>
+<script src="js/reports.js"></script>
+</body>
+</html>

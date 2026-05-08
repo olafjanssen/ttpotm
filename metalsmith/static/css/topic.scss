@@ -1,0 +1,155 @@
+/*
+  CSS resets
+ */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+a.current {
+  font-weight: bold;
+}
+
+html {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #222;
+}
+
+/*
+  Fonts
+ */
+@font-face {
+  src: url('../fonts/Courier Prime.ttf');
+  font-family: CourierPrime;
+}
+
+@import "../../../node_modules/sassline/assets/sass/sassline-base";
+
+.project-content {
+  position: relative;
+  padding: 2em 1em;
+  max-width: 33em;
+  margin: 0 auto;
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  pre {
+    word-break: normal;
+  }
+
+  time {
+    font-style: italic;
+    white-space: nowrap;
+
+    &::before {
+      content: "\2014\00a0";
+    }
+  }
+
+  h2 span {
+    padding-right: 0.5em;
+    background: white;
+  }
+
+  .date {
+    font-style: italic;
+    white-space: nowrap;
+  }
+
+  .side-picture {
+    margin: 0 1em;
+    width: 8em;
+    float: right;
+  }
+}
+
+/* Social buttons */
+.typeset .a2a_kit {
+  float: right;
+
+  a {
+    background: none;
+  }
+
+  a:hover {
+    background: none;
+  }
+}
+
+article p>img {
+  width: 100%;
+}
+
+#title-img {
+  width: 20em;
+  display: block;
+  margin: 1em auto;
+}
+
+.content-preview {
+  max-height: 300px;
+  overflow: scroll;
+}
+
+.typeset h2 code {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.typeset code {
+  background-color: black;
+  color: ghostwhite;
+  padding: 0 0.2em;
+}
+
+.typeset blockquote p {
+  border-left: 0.15rem solid black;
+}
+
+.project-full-blurp {
+  font-style: italic;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.self-right {
+  flex-grow: 2;
+  text-align: right;
+}
+
+/* reset font for navbar only */
+.nav-bar {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.col-list {
+  column-count: auto;
+  column-width: 15em;
+}
+
+.col-list li {
+  font-size: 80%;
+  line-height: 2;
+  list-style: none;
+}
