@@ -1,5 +1,6 @@
-var debug = require('debug')('metalsmith-data-exporter');
-var fs = require('fs');
+var debug = require("debug")("metalsmith-data-exporter");
+var fs = require("fs");
+var path = require("path");
 
 /**
  * Expose `plugin`.
@@ -16,25 +17,29 @@ module.exports = plugin;
  * @return {Function}
  */
 
-function plugin(options){
+function plugin(options) {
+  var filteredKeys = ["stats", "mode", "collection", "previous", "next"];
 
-    var filteredKeys = ['stats','mode','collection','previous','next'];
+  return function (files, metalsmith, done) {
+    var output = [];
+    Object.keys(files).forEach(function (key) {
+      var file = files[key];
+      if (!file[options.requiredKey]) return;
 
-    return function (files, metalsmith, done) {
-        var output = [];
-        Object.keys(files).forEach(function (key) {
-            var file = files[key];
-            if (!file[options.requiredKey]) return;
+      var exportable = {};
+      Object.keys(file).forEach(function (k) {
+        if (filteredKeys.indexOf(k) > -1 || !file[k]) return;
+        exportable[k] = file[k].toString();
+      });
 
-            var exportable = {};
-            Object.keys(file).forEach(function (k) {
-              if (filteredKeys.indexOf(k) > -1 || !file[k]) return;
-              exportable[k] = file[k].toString();
-            });
+      output.push(exportable);
+    });
 
-            output.push(exportable);
-        });
-
-        fs.writeFile(options.file, JSON.stringify(output), 'utf8', done);
+    var dir = path.dirname(options.file);
+    if (dir && !fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
     }
+
+    fs.writeFile(options.file, JSON.stringify(output), "utf8", done);
+  };
 }
