@@ -1,13 +1,13 @@
 ---
 layout: novel.html
-title: "The Toki Ponist on the Mountain - The Novel"
+title: "The Toki Ponist on the Mountain"
+description: "A novel exploring language, civilization, and the nature of reality"
 thumb: "novel/3D-Book-Template.png"
-description: "The background story of The Toki Ponist on the Mountain"
 ---
 
-# The Toki Ponist on the Mountain - The Novel
+# The Toki Ponist on the Mountain
 
-<img src="/img/novel/3D-Book-Template.png" alt="novel cover" class="img-thumbnail col-md-6 border-0 float-left">
+<img src="../../img/novel/3D-Book-Template.png" alt="novel cover" class="img-thumbnail col-md-6 border-0 float-left">
 
 Like so many people, Joakim combats his inner demons. His latest strategy is uncovering a lost civilization based on a few peculiar words he has picked up in a language he will refer to as Toki Pona. To Joakim, the ancient wisdom of this civilization will set him free. But then he gets trapped in his search when a doctor surgically removes his demons. Now, with the help of a kindred spirit, Joakim finds out who has been sending him messages and what the actual monster is they both have to battle.
 

@@ -1,13 +1,8 @@
 ---
-title: "Today"
-titleprefix: "The Toki Ponist on the Mountain Topic:"
-longtitle: ""
-tag: today
+title: "Nonperclock"
+layout: project.html
 description: "A different time, a different calendar, a different life."
 date: 2021-09-10
-type: info
-layout: project.html
-tags: tools
 ---
 
 ## Today
@@ -51,12 +46,12 @@ While in early references, there is no mention of naming weeks of days of the we
 - 10 - `ilo` - care of appliances and machines (including car and bike)
 
 
-<script src="/tools/nonperclock/lib/suncalc.js"></script>
-<script src="/tools/nonperclock/lib/svg.min.js"></script>
-<script src="/tools/nonperclock/js/nonperclock.js"></script>
+<script src="../../tools/nonperclock/lib/suncalc.js"></script>
+<script src="../../tools/nonperclock/lib/svg.min.js"></script>
+<script src="../../tools/nonperclock/js/nonperclock.js"></script>
 
-<script src="/tools/nonperclock/lib/moment.min.js"></script>
-<script src="/tools/nonperclock/js/ponacalendar.js"></script>
+<script src="../../tools/nonperclock/lib/moment.min.js"></script>
+<script src="../../tools/nonperclock/js/ponacalendar.js"></script>
 <style>
     #ponatime {
     }
