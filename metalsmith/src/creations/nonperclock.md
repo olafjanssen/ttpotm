@@ -3,6 +3,11 @@ title: "Nonperclock"
 layout: project.html
 description: "A different time, a different calendar, a different life."
 date: 2021-09-10
+thumb: "img/topic-home.png"
+character: "Dr. Olaf T.A. Janssen, PhD"
+character_initials: "OJ"
+character_text: "The calendar the universe actually uses. We just forgot."
+category: tools
 ---
 
 ## Today
@@ -52,129 +57,6 @@ While in early references, there is no mention of naming weeks of days of the we
 
 <script src="../../tools/nonperclock/lib/moment.min.js"></script>
 <script src="../../tools/nonperclock/js/ponacalendar.js"></script>
-<style>
-    #ponatime {
-    }
-
-    .npc-major, .npc-minor, .npc-patch {
-        vertical-align: middle;
-    }
-
-    .npc-major-sep,
-    .npc-minor-sep {
-    }
-
-    .npc-major-sep:after,
-    .npc-minor-sep:after {
-        content: ':';
-    }
-
-    .npc-patch-sep {
-    }
-
-    .npc-patch-sep:after {
-        content: ' ';
-    }
-
-    .npc-remainder {
-        vertical-align: middle;
-        font-size: 0.7em;
-        opacity: 0.5;
-    }
-
-    .npc-sign {
-        vertical-align: middle;
-    }
-
-    .npc-sign:after {
-        content: '+';
-    }
-
-    .npc-sign[data-npc-sign="-1"]:after {
-        content: '-';
-    }
-</style>
-
-<style>
-        .pona-calendar-widget {
-            font-family: Helvetica, sans-serif;
-            font-size: 0.7em;
-        }
-
-        .pc-season {
-            display: inline-block;
-            border: 2px solid black;
-            border-radius: 0.4em;
-            margin: 0.5em;
-        }
-
-        .pc-season-title {
-            font-weight: bold;
-            text-align: center;
-        }
-
-        .pc-week {
-            display: block;
-        }
-
-        .pc-day {
-            width: 1.5em;
-            text-align: center;
-            display: inline-block;
-            text-align: center;
-            display: inline-block;
-            background: rgba(255,255,255,0.3);
-            margin: 0.1em;
-        }
-
-        .pc-day.today {
-            background-color: black;
-            color: white;
-        }
-
-        .pc-day.event {
-            background-color: #666;
-            color: white;
-        }
-
-        .pc-season[data-season="0"] {
-            background-color: #FFC001;
-        }
-
-        .pc-season[data-season="1"]{
-            background-color: #F3B084;
-        }
-
-        .pc-season[data-season="2"]{
-            background-color: #BFBFBF;
-        }
-
-        .pc-season[data-season="3"]{
-            background-color: #B4C6E7;
-        }
-
-        .pc-season[data-season="4"]{
-            background-color: #C6E0B4;
-        }
-</style>
-
-<style>
-        .dek, .el {
-            transform: rotate(180deg);
-            display: inline-block;
-        }
-        
-        .dek:after {
-            content: "2";
-        }
-        
-        .el:after {
-            content: "3";
-        }
-        #ponadate .dek, #ponadate .el, #ponatime .dek, #ponatime .el {
-            transform: rotate(180deg) translateY(-0.3em);
-        }
-</style>
 
 <script>
     const ponaDate = PonaCalendar.ponaDateFromTimestamp(new Date().getTime());
@@ -185,84 +67,4 @@ While in early references, there is no mention of naming weeks of days of the we
     setInterval(function () {
         document.getElementById('ponatime').innerHTML = NonPerClock.getFormattedTime({formatType: 'html'});
     }, 200);
-</script>
-
-<script>
-
-    var w = 150, h = 300, margin = 0.1;
-    var draw = SVG('drawing').size(w, h);
-
-    // all days
-    var d = 0, dt, sunPos, alts = [], azms = [], points = [];
-    for (d = 0; d < 366; d++) {
-        dt = new Date(Date.UTC(2018, 0, d, 12, 0));
-        sunPos = SunCalc.getPosition(dt, 51.422894, 5.557136);
-
-        var alt = sunPos.altitude * 180 / Math.PI;
-        var azm = sunPos.azimuth * 180 / Math.PI;
-
-        console.log(dt, sunPos);
-
-        points.push([azm, alt]);
-    }
-    var xlim = [Math.min(...points.map(function (d) {
-        return d[0]
-    })
-    ),
-    Math.max(...points.map(function (d) {
-        return d[0]
-    })
-    )]
-    ;
-    var ylim = [Math.min(...points.map(function (d) {
-        return d[1]
-    })
-    ),
-    Math.max(...points.map(function (d) {
-        return d[1]
-    })
-    )]
-    ;
-
-    function displayConvert(d) {
-        return [
-            margin / 2 * w + (1 - margin) * ((d[0] - xlim[0]) / (xlim[1] - xlim[0]) * w), h - (margin / 2 * w + (1 - margin) * ((d[1] - ylim[0]) / (ylim[1] - ylim[0]) * h))
-        ];
-    }
-
-    function drawDate(date, fill, r) {
-        if (!r) {
-            r = 2;
-        }
-        sunPos = SunCalc.getPosition(date, 51.422894, 5.557136);
-
-        var alt = sunPos.altitude * 180 / Math.PI;
-        var azm = sunPos.azimuth * 180 / Math.PI;
-        var p = displayConvert([azm, alt]);
-
-        var circ = draw.circle(r).fill(fill).move(p[0] - r / 2, p[1] - r / 2).opacity(1);
-    }
-
-    var pts = points.map(function (d) {
-        return displayConvert(d);
-    });
-
-    let settings = { stroke: 15, radius: 10, todayRadius: 20}
-
-    var polygon = draw.polygon(pts).fill('none').stroke({width: settings.stroke})
-
-    for (let d = 365; d >= 0; d--) {
-        let pDate = PonaCalendar.ponaDateFromTimestamp(new Date(Date.UTC(2019, 0, d, 12, 0)).getTime());
-
-        let s = settings.radius;
-
-        let seasonColors = [
-            '#FFC001', '#F3B084', '#BFBFBF', '#B4C6E7', '#C6E0B4'
-        ];
-
-        drawDate(new Date(Date.UTC(2019, 0, d, 12, 0)), seasonColors[pDate.numericDate.season], s);
-    }
-
-    drawDate(new Date(Date.UTC(2019, new Date().getMonth(), new Date().getDate(), 12, 0)), 'rgba(0,0,0,0.5)', settings.todayRadius);
-
 </script>

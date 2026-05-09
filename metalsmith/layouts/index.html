@@ -7,7 +7,7 @@
     <script type="application/javascript">
         var _paq = window._paq = window._paq || [];
         /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        // Call disableCookies before calling trackPageView 
+        // Call disableCookies before calling trackPageView
         _paq.push(['disableCookies']);
         _paq.push(['trackPageView']);
         _paq.push(['enableLinkTracking']);
@@ -33,7 +33,7 @@
     <meta property="og:title" content="{{ title }}">
     <meta property="og:type" content="website">
     <meta property="og:image" content="{{url}}img/logo-01.png">
-    <meta property="og:site_name" content="The Toki Ponist on the Mountain">
+    <meta property="og:site_name" content="TTPotM Collective">
     <meta property="og:description" content="{{ description }}">
     <meta property="og:url" content="{{ url }}">
 
@@ -59,64 +59,43 @@
 
 <body class="typeset">
     <div class="container">
+        <!-- UPDATED JUMBOTRON -->
         <div class="jumbotron row p-3 p-md-5 text-dark rounded bg-transparent" id="main-jumbo">
             <div class="col-md-6 px-0">
-                <h1><img src="img/title-01.png" class="img-fluid" alt="The Toki Ponist on the Mountain"></h1>
+                <h1><img src="img/title-01.png" class="img-fluid" alt="TTPotM Collective"></h1>
             </div>
             <div class="col-md-6 px-0 align-self-center">
                 <p class="lead">
-                    Everybody needs a guru. Therefore, I need one too. Fortune has it that I am one, so I decided to be
-                    my
-                    own guru. Here it will be unveiled, one step at a time, how I became <strong>The Toki Ponist on the
-                        Mountain</strong>.
+                    A group of fictional voices creating works at the intersection of
+                    language, philosophy, and play.
                 </p>
                 <form class="form-inline">
-                    <input class="form-control" type="text" placeholder="Search wisdom" aria-label="Search"
-                        id="search-box">
+                    <input class="form-control" type="text" placeholder="Search wisdom"
+                           aria-label="Search" id="search-box">
                 </form>
             </div>
         </div>
 
+        <!-- SEARCH CONTAINER -->
         <div class="container tp-panel hide" id="search-container">
             <h2><code>ni li lon seme?</code><span> ~ search results</span></h2>
             <div class="list-group pb-3" id="search-results">
             </div>
         </div>
 
-        <div class="card-deck mb-5">
-            <div class="card flex-md-row tp-card-border">
-                <div class="card-body">
-                    <a class="text-dark" href="novels/">
-                        <h3 class="card-title"><code>lipu mute</code> ~ novels</h3>
-                        <p class="card-text">Follow the progress of the origin story of The Toki Ponist on the Mountain
-                            in published and upcoming novels.</p>
-                        <div class="my-card-img" style="background-image: url(img/wanderlust-girl-witha-view.png);">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="card flex-md-row tp-card-border">
-                <div class="card-body">
-                    <a class="text-dark" href="games/">
-                        <h3 class="card-title"><code>ilo musi</code> ~ games</h3>
-                        <p class="card-text">Enter the universe in a Point & Click Adventure fashion; and play the first
-                            escape
-                            game episode now.</p>
-                        <div class="my-card-img" style="background-image: url(img/topic-home.png);"></div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
+        <!-- SINGLE CREATIONS SECTION -->
         <div class="container tp-panel">
-            <h2><code>sitelen sona pona</code><span> ~ topics</span></h2>
+            <h2><code>musi mute</code><span> ~ our creations</span></h2>
             <div class="card-columns">
-                {{#each collections.topics}}
-                <div class="card bg-transparent border-0" data-tag="{{tag}}">
+                {{#each collections.creations}}
+                <div class="card flex-md-row tp-card-border">
+                    {{#if thumb}}
+                    <div class="my-card-img" style="background-image: url({{ thumb }});"></div>
+                    {{/if}}
                     <div class="card-body">
-                        <a class="text-dark" href="topics/{{ tag }}/">
-                            <h4 class="card-title">{{ title }}</h4>
-                            <p class="card-text">{{{ description }}}</p>
+                        <a class="text-dark" href="{{ path }}">
+                            <h3 class="card-title">{{ title }}</h3>
+                            <p class="card-text">{{ description }}</p>
                         </a>
                     </div>
                 </div>
@@ -124,150 +103,101 @@
             </div>
         </div>
 
-        <!-- <div class="container tp-panel">
-            <h2><code>sona li seme?</code><span> ~ Q&A</span></h2>
-            <div class="card-columns">
-                {{#each collections.faq}}{{#if tag}}
-                <div class="card bg-transparent border-0">
-                    <div class="card-body">
-                        <a class="text-dark" href="faq/{{ tag }}/">
-                            <h4 class="card-title">{{ question }}</h4>
-                            <p class="card-text">{{{ shortanswer }}}</p>
-                        </a>
-                    </div>
-                </div>
-                {{/if}}{{/each}}
-            </div>
-        </div> -->
-
-        <div class="container tp-panel">
-            <h2><code>toki nasin nasa</code><span> ~ koans</span></h2>
-            <div class="card-columns">
-                {{#each collections.tokiNasinNasa}}{{#if tag}}
-                <div class="card bg-transparent border-0">
-                    <div class="card-body">
-                        <a class="text-dark" href="tokinasinnasa/{{ tag }}/">
-                            <h4 class="card-title">{{ title }}</h4>
-                            <p class="card-text">{{{ description }}}</p>
-                        </a>
-                    </div>
-                </div>
-                {{/if}}{{/each}}
-            </div>
-        </div>
-
-        <!--    <div class="container tp-panel">-->
-        <!--        <h2><code>toki sona lili</code><span> ~ aforisms</span></h2>-->
-        <!--        <div class="card-columns">-->
-        <!--            {{#each collections.aforisms}}{{#if tag}}-->
-        <!--            <div class="card bg-transparent border-0">-->
-        <!--                <div class="card-body">-->
-        <!--                    <a class="text-dark" href="aforisms/{{ tag }}/">-->
-        <!--                    <h7 class="card-title">{{ description }}</h7>-->
-        <!--                    </a>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--            {{/if}}{{/each}}-->
-        <!--        </div>-->
-        <!--    </div>-->
-
     </div>
+
+    <!-- UPDATED FOOTER -->
     <div class="nav-bar navbar-dark p-3 mu-3" style="background-color: black;">
         <span class="navbar-text">
-            <a class="nav-link" href="disclaimer/">Disclaimer | disclosure | self-critique</a>
+            <a class="nav-link" href="about/disclaimer/">Disclaimer | disclosure | self-critique</a>
         </span>
         <span>
             <script type='application/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
-            <script type='application/javascript'>
-                kofiwidget2.init('Support Me on Ko-fi', '#46b798', 'W7W4Y6U0');
-                kofiwidget2.draw();
-            </script>
+            <script type='application/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#46b798', 'W7W4Y6U0');kofiwidget2.draw();</script>
         </span>
         <span class="navbar-text self-right">
-            <a class="" href="https://www.facebook.com/gaming/ttpotm">Facebook</a> | 
-            <a class="" href="https://twitter.com/TTPotM" target="_blank">Twitter</a> | 
-            <a class="" href="https://www.instagram.com/ttpotm/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/gaming/ttpotm">Facebook</a> |
+            <a href="https://twitter.com/TTPotM" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com/ttpotm/" target="_blank">Instagram</a>
         </span>
         <span class="navbar-text self-right">
-            The Toki Ponist on the Mountain by <a href="https://awokenwell.com" target="_blank">Awoken Well</a>, 2021
+            TTPotM Collective, nominally curated by Dr. Olaf T.A. Janssen, PhD
         </span>
     </div>
-</body>
 
-<script>
-    function fetchJSONFile(path, callback) {
-        var httpRequest = new XMLHttpRequest();
-        httpRequest.onreadystatechange = function () {
-            if (httpRequest.readyState === 4) {
-                if (httpRequest.status === 200) {
-                    var data = JSON.parse(httpRequest.responseText);
-                    if (callback) callback(data);
+    <script>
+        function fetchJSONFile(path, callback) {
+            var httpRequest = new XMLHttpRequest();
+            httpRequest.onreadystatechange = function () {
+                if (httpRequest.readyState === 4) {
+                    if (httpRequest.status === 200) {
+                        var data = JSON.parse(httpRequest.responseText);
+                        if (callback) callback(data);
+                    }
                 }
-            }
-        };
-        httpRequest.open('GET', path);
-        httpRequest.send();
-    }
+            };
+            httpRequest.open('GET', path);
+            httpRequest.send();
+        }
 
-    var fuse, alldata;
+        var fuse, alldata;
 
-    fetchJSONFile('/api/allfiles.json', function (data) {
-        alldata = data;
+        fetchJSONFile('/api/allfiles.json', function (data) {
+            alldata = data;
 
-        alldata.forEach(function (item) {
-            item.sentences = item.contents.match(
-                /<p>.*?<\/p>/g); //item.contents.replace(/([.?!])\s*(?=[A-Z])/g, "$1|").split("|";
-            if (item.sentences) {
-                item.sentences = item.sentences.filter(function (sentence) {
-                    return sentence.indexOf('<img') === -1;
+            alldata.forEach(function (item) {
+                item.sentences = item.contents.match(
+                    /<p>.*?<\/p>/g); //item.contents.replace(/([.?!])\s*(?=[A-Z])/g, "$1|").split("|");
+                if (item.sentences) {
+                    item.sentences = item.sentences.filter(function (sentence) {
+                        return sentence.indexOf('<img') === -1;
+                    });
+                }
+            });
+
+            var options = {
+                shouldSort: true,
+                tokenize: true,
+                includeScore: true,
+                includeMatches: true,
+                findAllMatches: true,
+                threshold: 0.2,
+                maxPatternLength: 32,
+                minMatchCharLength: 4,
+                keys: [
+                    "sentences"
+                ]
+            };
+            fuse = new Fuse(alldata, options);
+        });
+
+        function updateHaystack(input, needle) {
+            return input.replace(new RegExp('(' + needle + ')', 'ig'), '<strong>$1</strong>');
+        }
+
+        document.getElementById('search-box').addEventListener('input', function () {
+            var value = document.getElementById('search-box').value;
+            var results = fuse.search(value);
+
+            let searchElement = document.getElementById('search-container');
+            let resultElement = document.getElementById('search-results');
+            resultElement.innerHTML = "";
+
+            if (value === "") {
+                searchElement.classList.add('hide');
+            } else {
+                searchElement.classList.remove('hide');
+                results.forEach(function (result) {
+                    result.matches.forEach(function (match) {
+                        let quote = match.value;
+                        quote = updateHaystack(quote, value);
+                        quote += '<em>&#8212; ' + result.item.title + '</em>';
+                        resultElement.innerHTML += '<a href="' + result.item.path +
+                            '" class="list-group-item list-group-item-action border-0">' + quote +
+                            '</a>'
+                    });
                 });
             }
         });
-
-        var options = {
-            shouldSort: true,
-            tokenize: true,
-            includeScore: true,
-            includeMatches: true,
-            findAllMatches: true,
-            threshold: 0.2,
-            maxPatternLength: 32,
-            minMatchCharLength: 4,
-            keys: [
-                "sentences"
-            ]
-        };
-        fuse = new Fuse(alldata, options);
-    });
-
-    function updateHaystack(input, needle) {
-        return input.replace(new RegExp('(' + needle + ')', 'ig'), '<strong>$1</strong>');
-    }
-
-    document.getElementById('search-box').addEventListener('input', function () {
-        var value = document.getElementById('search-box').value;
-        var results = fuse.search(value);
-
-        let searchElement = document.getElementById('search-container');
-        let resultElement = document.getElementById('search-results');
-        resultElement.innerHTML = "";
-
-        if (value === "") {
-            searchElement.classList.add('hide');
-        } else {
-            searchElement.classList.remove('hide');
-            results.forEach(function (result) {
-                result.matches.forEach(function (match) {
-                    let quote = match.value;
-                    quote = updateHaystack(quote, value);
-                    quote += '<em>&#8212; ' + result.item.title + '</em>';
-                    resultElement.innerHTML += '<a href="' + result.item.path +
-                        '" class="list-group-item list-group-item-action border-0">' + quote +
-                        '</a>'
-                });
-            });
-        }
-    });
-</script>
+    </script>
 
 </html>

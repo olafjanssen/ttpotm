@@ -2,6 +2,11 @@
 layout: koan.html
 title: "Tokinasinnasa"
 description: "Toki Pona koans - words of questionable wisdom"
+thumb: "img/tokinasinnasa/koans_fb-1.jpg"
+character: "The Toki Ponist on the Mountain"
+character_initials: "TTP"
+character_text: "Wisdom that unravels as soon as you understand it."
+category: koans
 ---
 
 # Tokinasinnasa

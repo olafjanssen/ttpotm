@@ -3,6 +3,11 @@ title: "ilo Nasintawatoki"
 layout: project.html
 description: "Learn Toki Pona in a playful way using a free Duolingo-like web app."
 date: 2020-09-11
+thumb: "img/tools/ilo-nasintawatoki.png"
+character: "The Toki Ponist on the Mountain"
+character_initials: "TTP"
+character_text: "A learning tool for a language that resists learning."
+category: tools
 ---
 
 <style>
@@ -22,7 +27,5 @@ There is no need to study the language `toki pona` in order to be confused by my
 [![ilo Nasintawatoki](../../img/tools/ilo-nasintawatoki.png)](https://smoishele.com/tpcl)
 
 [Try ilo Nasintawatoki here!](https://smoishele.com/tpcl)
-
-[Access the tool directly](/tools/nasintawatoki/)
 
 * __Disclaimer:__ This site will never be your go-to resource for diving into the original artificially created language Toki Pona. For this you should peruse the many other communities online, and consult the original [pu](https://www.amazon.com/Toki-Pona-Language-Sonja-Lang/dp/0978292308) (book for Toki Pona interaction) by Sonja Lang ([tokipona.org](https://tokipona.org)).*

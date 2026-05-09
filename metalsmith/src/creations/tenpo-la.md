@@ -2,7 +2,11 @@
 layout: game.html
 title: "Tenpo La..."
 description: "A small, sweet, and easy clicky-touchy puzzle game in several shades of grey"
-thumb: "game/tenpo-la-1.png"
+thumb: "img/game/tenpo-la-1.jpg"
+character: "The Toki Ponist on the Mountain"
+character_initials: "TTP"
+character_text: "Time is a flat circle. Here's 25 ways to see it."
+category: games
 ---
 
 # Tenpo La...

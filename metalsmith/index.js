@@ -69,6 +69,11 @@ Metalsmith(__dirname)
   .use(
     layouts({
       engine: "handlebars",
+      helpers: {
+        eq: function (a, b) {
+          return a === b;
+        },
+      },
     }),
   )
   .build(function (err, files) {
