@@ -411,6 +411,10 @@ article p > img {
     margin: 0 auto;
 }
 
+.jumbotron .book-3d {
+    max-width: 300px;
+}
+
 .book-3d__inner {
     position: relative;
     transform-style: preserve-3d;
