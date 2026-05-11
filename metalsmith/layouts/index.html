@@ -82,7 +82,33 @@
             <div class="list-group pb-3" id="search-results">
             </div>
         </div>
+    </div>
 
+        <!-- BOOKS -->
+        <div class="book-container tp-panel">
+            <h2><code>lipu mute</code><span> ~ books</span></h2>
+            <div class="books-flex-container">
+                {{#each collections.books}}
+                <div class="book-card-item tp-book-card-border">
+                    <div class="book-card-img">
+                        <div class="book-3d">
+                        <div class="book-3d__inner">
+                            <img class="book-3d__cover" src="{{ cover }}" alt="{{ title }}">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <a class="text-dark" href="{{ path }}">
+                            <h3 class="card-title">{{ title }}</h3>
+                            <p class="card-text">{{ description }}</p>
+                        </a>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+
+    <div class="container">
         <!-- SINGLE CREATIONS SECTION -->
         <div class="container tp-panel">
             <h2><code>musi mute</code><span> ~ our creations</span></h2>

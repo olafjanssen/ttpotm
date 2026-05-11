@@ -3,10 +3,9 @@ layout: novel.html
 title: "The Toki Ponist on the Mountain"
 description: "A novel exploring language, civilization, and the nature of reality"
 thumb: "img/novel/3D-Book-Template.png"
-character: "The Toki Ponist on the Mountain"
-character_initials: "TTP"
-character_text: "The mountain speaks in riddles. I transcribed them into a novel."
+cover: "img/novel/novel.svg"
 category: novels
+state: "shelved"
 ---
 
 # The Toki Ponist on the Mountain

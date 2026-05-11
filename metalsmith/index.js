@@ -8,6 +8,7 @@ var dateFormatter = require("metalsmith-date-formatter");
 var sitemap = require("metalsmith-sitemap");
 var dataexporter = require("./metalsmith-data-exporter");
 var alias = require("metalsmith-alias");
+const { sortBy } = require("lodash");
 
 Metalsmith(__dirname)
   .metadata({
@@ -21,6 +22,11 @@ Metalsmith(__dirname)
     collections({
       creations: {
         pattern: "creations/*.md",
+        sortBy: "date",
+        reverse: true,
+      },
+      books: {
+        pattern: "books/*.md",
         sortBy: "date",
         reverse: true,
       },

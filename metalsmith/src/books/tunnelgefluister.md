@@ -1,12 +1,11 @@
 ---
 layout: novel.html
-title: "Piqued"
+title: "Tunnelgefluister [NL]"
 description: "A novel exploring the interplay of language, identity, and reality"
-thumb: "img/novel/piqued-cover-epub.jpg"
-character: "The Trepid Pataphysicist on Mycelial Transformation"
-character_initials: "TP"
-character_text: "Remember that time meaning collapsed and we all stared into the void laughing? I wrote it down."
+thumb: "img/novel/novel.svg"
+cover: "img/novel/novel.svg"
 category: novels
+state: editing
 ---
 
 # Piqued

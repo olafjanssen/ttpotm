@@ -3,10 +3,13 @@ layout: novel.html
 title: "When People Go Plonf"
 description: "A novel exploring the moment when understanding collapses and new meaning emerges"
 thumb: "img/novel/when-people-go-plonf-cover-epub.jpg"
+cover: "img/novel/when-people-go-plonf-cover-epub.jpg"
 character: "Joanna Fatless"
 character_initials: "JF"
 character_text: "I walked the city until the pavement started talking back. Here's what it said."
 category: novels
+published: "April 2026"
+state: "published"
 ---
 
 # When People Go Plonf

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2560" viewBox="0 0 1600 2560">
+  <rect width="1600" height="2560" fill="#a0a0a0"/>
+  <path d="M800 1280 m-400 0 a400 400 0 1 1 800 0 a400 400 0 1 1 -800 0" fill="none" stroke="#505050" stroke-width="20" stroke-linecap="round"/>
+  <path d="M800 1280 m-350 0 a350 350 0 1 1 700 0 a350 350 0 1 1 -700 0" fill="none" stroke="#505050" stroke-width="20" stroke-linecap="round"/>
+  <path d="M800 1280 m-300 0 a300 300 0 1 1 600 0 a300 300 0 1 1 -600 0" fill="none" stroke="#505050" stroke-width="20" stroke-linecap="round"/>
+  <path d="M800 1280 m-250 0 a250 250 0 1 1 500 0 a250 250 0 1 1 -500 0" fill="none" stroke="#505050" stroke-width="20" stroke-linecap="round"/>
+  <path d="M800 1280 m-200 0 a200 200 0 1 1 400 0 a200 200 0 1 1 -400 0" fill="none" stroke="#505050" stroke-width="20" stroke-linecap="round"/>
+  <path d="M800 1280 m-150 0 a150 150 0 1 1 300 0 a150 150 0 1 1 -300 0" fill="none" stroke="#505050" stroke-width="20" stroke-linecap="round"/>
+  <path d="M800 1280 m-100 0 a100 100 0 1 1 200 0 a100 100 0 1 1 -200 0" fill="none" stroke="#505050" stroke-width="20" stroke-linecap="round"/>
+  <path d="M800 1280 m-50 0 a50 50 0 1 1 100 0 a50 50 0 1 1 -100 0" fill="none" stroke="#505050" stroke-width="20" stroke-linecap="round"/>
+</svg>
