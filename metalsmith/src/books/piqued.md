@@ -8,8 +8,9 @@ character: "The Trepid Pataphysicist on Mycelial Transformation"
 character_initials: "TP"
 character_text: "Remember that time meaning collapsed and we all stared into the void laughing? I wrote it down."
 category: novels
-published: "January 2026"
+human_status: "Published in January 2026"
 state: published
+order: 2
 ---
 
 # Piqued

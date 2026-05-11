@@ -3,9 +3,7 @@ layout: game.html
 title: "Coming Home"
 description: "A short puzzle adventure in the TTPotM universe"
 thumb: "img/game/cominghome-room.jpg"
-character: "The Toki Ponist on the Mountain"
-character_initials: "TTP"
-character_text: "You've been away too long. Come back. Solve the puzzle. Remember."
+cover: "img/game/cominghome-room.jpg"
 category: games
 ---
 

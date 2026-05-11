@@ -6,6 +6,7 @@ thumb: "img/novel/3D-Book-Template.png"
 cover: "img/novel/novel.svg"
 category: novels
 state: "shelved"
+order: 7
 ---
 
 # The Toki Ponist on the Mountain

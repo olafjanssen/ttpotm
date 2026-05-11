@@ -27,8 +27,13 @@ Metalsmith(__dirname)
       },
       books: {
         pattern: "books/*.md",
-        sortBy: "date",
-        reverse: true,
+        sortBy: "order",
+        reverse: false,
+      },
+      games: {
+        pattern: "games/*.md",
+        sortBy: "order",
+        revers: false,
       },
       tokiNasinNasa: {
         pattern: "creations/tokinasinnasa/*.md",

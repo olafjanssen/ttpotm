@@ -8,8 +8,9 @@ character: "Joanna Fatless"
 character_initials: "JF"
 character_text: "I walked the city until the pavement started talking back. Here's what it said."
 category: novels
-published: "April 2026"
+human_status: "Published in April 2026"
 state: "published"
+order: 1
 ---
 
 # When People Go Plonf

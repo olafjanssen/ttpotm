@@ -6,6 +6,7 @@ thumb: "img/novel/novel.svg"
 cover: "img/novel/novel.svg"
 category: novels
 state: first draft
+order: 6
 ---
 
 # Piqued
