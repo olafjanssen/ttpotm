@@ -307,6 +307,28 @@ article p > img {
     background: white;
 }
 
+.tp-panel-top {
+    position: relative;
+    margin-bottom: 4em;
+}
+
+.tp-panel-top:after {
+    border-top: 2px solid black;
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+    top: 1.25em;
+    left: 0;
+}
+
+.tp-panel-top h2 span {
+    padding-right: 0.5em;
+    background: white;
+}
+
 .tp-card-border {
     border: 2px solid black;
 }
@@ -435,7 +457,7 @@ article p > img {
     border: none;
 }
 
-.book-container {
+.item-container {
     margin: 4em;
 }
 
@@ -512,10 +534,6 @@ article p > img {
 .game-card-img {
     width: 100%;
     border: none;
-}
-
-.game-container {
-    margin: 4em;
 }
 
 .game-3d__cover {

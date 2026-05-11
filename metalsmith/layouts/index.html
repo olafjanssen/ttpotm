@@ -60,14 +60,18 @@
     <div class="container">
         <!-- UPDATED JUMBOTRON -->
         <div class="jumbotron row p-3 p-md-5 text-dark rounded bg-transparent" id="main-jumbo">
-            <div class="col-md-6 px-0">
-                <h1><img src="img/title-01.png" class="img-fluid" alt="TTPotM Collective"></h1>
+            <div class="col-md-5 px-0">
+                <h1><img src="img/ttpotm.png" class="img-fluid" alt="TTPotM Collective"></h1>
             </div>
-            <div class="col-md-6 px-0 align-self-center">
+            <div class="col-md-7 align-self-center">
                 <p class="lead">
-                    A group of fictional voices creating works at the intersection of
-                    language, philosophy, and play.
-                </p>
+                    A collective of voices from some omniverse presents stories that don’t need to exist&mdash;but do anyway. From the footnotes of reality, we acknowledge: mountains are lonely, and gurus need company.</p>
+                <p>Tipi &mdash; The Toki Ponist on the Mountain,<br>
+                   Stipe &mdash; The Twonky Pataphysicist owning the Mycelium,<br>
+                   Brodeguy &mdash; The Taxondrian Psychogeographer ontologically testing Mulch,<br>
+                   Olaf T.A. Janssen  &mdash; The Reluctant Curator,<br>
+                       Joanna Fatless &mdash; Unaware Participant of Everything<br>
+
                 <form class="form-inline">
                     <input class="form-control" type="text" placeholder="Search wisdom"
                            aria-label="Search" id="search-box">
@@ -83,13 +87,13 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container tp-panel-top">
         <h2><code>lipu mute</code><span> ~ books</span></h2>
-        <p>A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text </p>
+        <p>Explore our growing library of works that weave together language, philosophy, and narrative. Each book invites you into a different facet of the Toki Pona universe and beyond.</p>
     </div>
 
         <!-- BOOKS -->
-        <div class="book-container">
+        <div class="item-container">
             <div class="books-flex-container">
                 {{#each collections.books}}
                 <div class="book-card-item tp-book-card-border">
@@ -111,13 +115,13 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container tp-panel-top">
             <h2><code>ilo musi</code><span> ~ games</span></h2>
-            <p>A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text </p>
+            <p>Interactive experiences that bring the Toki Pona world to life. Play, explore, and immerse yourself in adventures that challenge and delight.</p>
         </div>
 
         <!-- GAMES -->
-        <div class="game-container">
+        <div class="item-container">
             <div class="books-flex-container">
                 {{#each collections.games}}
                 <div class="game-card-item tp-book-card-border">
@@ -139,27 +143,27 @@
             </div>
         </div>
 
+        <div class="container tp-panel-top">
+            <h2><code>musi mute</code><span> ~ creations</span></h2>
+            <p>Tools, experiments, and other works in progress. From language learning applications to calendar systems, these creations showcase the diverse ways we engage with Toki Pona.</p>
+        </div>
 
-    <div class="container">
+
         <!-- SINGLE CREATIONS SECTION -->
-        <div class="container tp-panel">
-            <h2><code>musi mute</code><span> ~ our creations</span></h2>
-            <div class="card-columns">
+        <div class="item-container">
+            <div class="books-flex-container">
                 {{#each collections.creations}}
-                <div class="card flex-md-row tp-card-border">
-                    {{#if thumb}}
-                    <div class="my-card-img" style="background-image: url({{ thumb }});"></div>
-                    {{/if}}
+                <div class="game-card-item tp-book-card-border">
+                    <a class="text-dark" href="{{ path }}">
+                    <div class="my-card-img tp-card-border" style="background-image: url({{ thumb }});"></div>
                     <div class="card-body">
-                        <a class="text-dark" href="{{ path }}">
                             <h3 class="card-title">{{ title }}</h3>
                             <p class="card-text">{{ description }}</p>
-                        </a>
                     </div>
+                    </a>
                 </div>
                 {{/each}}
             </div>
-        </div>
 
     </div>
 
@@ -169,13 +173,10 @@
             <a class="nav-link" href="about/disclaimer/">Disclaimer | disclosure | self-critique</a>
         </span>
         <span>
-            <script type='application/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
-            <script type='application/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#46b798', 'W7W4Y6U0');kofiwidget2.draw();</script>
+            <!--<script type='application/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+            <script type='application/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#46b798', 'W7W4Y6U0');kofiwidget2.draw();</script>-->
         </span>
         <span class="navbar-text self-right">
-            <a href="https://www.facebook.com/gaming/ttpotm">Facebook</a> |
-            <a href="https://twitter.com/TTPotM" target="_blank">Twitter</a> |
-            <a href="https://www.instagram.com/ttpotm/" target="_blank">Instagram</a>
         </span>
         <span class="navbar-text self-right">
             TTPotM Collective, nominally curated by Dr. Olaf T.A. Janssen, PhD

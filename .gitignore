@@ -1,6 +1,6 @@
 .idea
 node_modules
-RawImageData
+raw
 dist
 config.json
 .DS_Store
