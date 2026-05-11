@@ -4,13 +4,12 @@ title: "Piqued"
 description: "A novel exploring the interplay of language, identity, and reality"
 thumb: "img/novel/piqued-cover-epub.jpg"
 cover: "img/novel/piqued-cover-epub.jpg"
-character: "The Trepid Pataphysicist on Mycelial Transformation"
-character_initials: "TP"
-character_text: "Remember that time meaning collapsed and we all stared into the void laughing? I wrote it down."
 category: novels
-human_status: "Published in January 2026"
+human_status: "Published"
 state: published
 order: 2
+paperback: https://www.bravenewbooks.nl/books/22049712
+epub: https://www.bravenewbooks.nl/books/22043434
 ---
 
 # Piqued

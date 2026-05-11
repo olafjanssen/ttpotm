@@ -516,6 +516,7 @@ article p > img {
     padding: 0.25em 0.5em 0.25em 1.5em;
     border-radius: 10px;
     background: #999;
+    border: 2px solid black;
 }
 
 .game-3d__inner::after {

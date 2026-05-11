@@ -4,13 +4,12 @@ title: "When People Go Plonf"
 description: "A novel exploring the moment when understanding collapses and new meaning emerges"
 thumb: "img/novel/when-people-go-plonf-cover-epub.jpg"
 cover: "img/novel/when-people-go-plonf-cover-epub.jpg"
-character: "Joanna Fatless"
-character_initials: "JF"
-character_text: "I walked the city until the pavement started talking back. Here's what it said."
 category: novels
-human_status: "Published in April 2026"
+human_status: "Published"
 state: "published"
 order: 1
+paperback: https://www.bravenewbooks.nl/books/22064559
+epub: https://www.bravenewbooks.nl/books/22061533
 ---
 
 # When People Go Plonf

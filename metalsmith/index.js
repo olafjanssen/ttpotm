@@ -6,7 +6,6 @@ var permalinks = require("metalsmith-permalinks");
 var paths = require("metalsmith-paths");
 var dateFormatter = require("metalsmith-date-formatter");
 var sitemap = require("metalsmith-sitemap");
-var dataexporter = require("./metalsmith-data-exporter");
 var alias = require("metalsmith-alias");
 const { sortBy } = require("lodash");
 
@@ -69,12 +68,6 @@ Metalsmith(__dirname)
     sitemap({
       hostname: "https://ttpotm.com/",
       omitIndex: true,
-    }),
-  )
-  .use(
-    dataexporter({
-      file: "./dist/api/allfiles.json",
-      requiredKey: "tag",
     }),
   )
   .use(
