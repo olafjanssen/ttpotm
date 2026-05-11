@@ -111,22 +111,27 @@
             </div>
         </div>
 
+        <div class="container">
+            <h2><code>ilo musi</code><span> ~ games</span></h2>
+            <p>A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text A lot of text </p>
+        </div>
+
         <!-- GAMES -->
-        <div class="book-container">
+        <div class="game-container">
             <div class="books-flex-container">
                 {{#each collections.games}}
-                <div class="book-card-item tp-book-card-border">
+                <div class="game-card-item tp-book-card-border">
                     <a class="text-dark" href="{{ path }}">
-                    <div class="book-card-img">
-                        <div class="book-3d">
-                        <div class="book-3d__inner">
-                            <img class="book-3d__cover" src="{{ cover }}" alt="{{ title }}">
+                    <div class="game-card-img">
+                        <div class="game-3d">
+                        <div class="game-3d__inner">
+                            <img class="game-3d__cover" src="{{ cover }}" alt="{{ title }}">
                         </div>
                         </div>
                     </div>
                     <div class="card-body">
                             <h3 class="card-title">{{ title }}</h3>
-                            <p class="card-text">{{ human_status }}</p>
+                            <p class="card-text">{{ description }}</p>
                     </div>
                     </a>
                 </div>

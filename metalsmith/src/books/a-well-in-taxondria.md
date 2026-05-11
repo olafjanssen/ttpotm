@@ -5,6 +5,7 @@ description: "A novel exploring the interplay of language, identity, and reality
 thumb: "img/novel/novel.svg"
 cover: "img/novel/novel.svg"
 category: novels
+human_status: "Filling plot gaps"
 state: first draft
 order: 5
 ---

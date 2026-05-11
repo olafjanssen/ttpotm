@@ -1,7 +1,7 @@
 ---
 layout: game.html
 title: "Coming Home"
-description: "A short puzzle adventure in the TTPotM universe"
+description: "A short escape room puzzle adventure about entering your home."
 thumb: "img/game/cominghome-room.jpg"
 cover: "img/game/cominghome-room.jpg"
 category: games

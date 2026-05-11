@@ -5,6 +5,7 @@ description: "A novel exploring language, civilization, and the nature of realit
 thumb: "img/novel/3D-Book-Template.png"
 cover: "img/novel/novel.svg"
 category: novels
+human_status: "Shelved until time is ripe"
 state: "shelved"
 order: 7
 ---

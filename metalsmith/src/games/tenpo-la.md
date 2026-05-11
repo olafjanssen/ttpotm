@@ -1,7 +1,7 @@
 ---
 layout: game.html
 title: "Tenpo La..."
-description: "A small, sweet, and easy clicky-touchy puzzle game in several shades of grey"
+description: "A small, sweet, and easy clicky-touchy puzzle game in several shades of grey (ages 4-7)."
 thumb: "img/game/tenpo-la-1.jpg"
 cover: "img/game/tenpo-la-1.jpg"
 category: games
