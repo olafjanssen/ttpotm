@@ -1,180 +1,256 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ilo Nasintawatoki</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <meta charset="UTF-8" />
+        <title>ilo Nasintawatoki</title>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
 
-    <link rel="stylesheet" href="css/tp-cl.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/tp-cl.css" />
+        <link rel="stylesheet" href="css/boilerpuddy.css" />
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-            crossorigin="anonymous"></script>
-</head>
-<body>
-<header>
-    <h1>
-        ilo Nasintawatoki reports
-    </h1>
-</header>
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/boilerpuddy.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>ilo Nasintawatoki reports</h1>
+        </header>
 
-<table id="reports" border="2">
-    <thead style="background-color: lightgray;"><td>tatoeba id</td><td>English</td><td>toki pona</td><td>Report</td></thead>
-</table>
+        <table id="reports" border="2">
+            <thead style="background-color: lightgray">
+                <td>tatoeba id</td>
+                <td>English</td>
+                <td>toki pona</td>
+                <td>Report</td>
+            </thead>
+        </table>
 
-<table id="doubles" border="2">
+        <table id="doubles" border="2"></table>
 
-</table>
+        <script src="js/helper.js"></script>
+        <script>
+            var reportData = [
+                { id: "639893", msg: "What's keburt?" },
+                {
+                    id: "4425537",
+                    msg: "Use awen maybe?",
+                    timestamp: "2019-01-30T10:34:54-05:00",
+                },
+                {
+                    id: "1121324",
+                    msg: "\u201cmi lon e sina\u201d means \u201cI cause you to exist\u201d",
+                    timestamp: "2019-01-31T12:26:49-05:00",
+                },
+                {
+                    id: "1529685",
+                    msg: "sina toki ala toki lon toki mi\/kepeken toki mi",
+                    timestamp: "2019-01-31T12:27:49-05:00",
+                },
+                {
+                    id: "2050133",
+                    msg: "it should be pakala or ko jaki",
+                    timestamp: "2019-01-31T12:32:36-05:00",
+                },
+                {
+                    id: "4844508",
+                    msg: "It should be ken by itself",
+                    timestamp: "2019-01-31T12:34:24-05:00",
+                },
+                {
+                    id: "3359522",
+                    msg: "ona li kili",
+                    timestamp: "2019-01-31T12:34:57-05:00",
+                },
+                {
+                    id: "2298741",
+                    msg: "alternatively \u201cni li pona ala\u201d",
+                    timestamp: "2019-01-31T12:35:54-05:00",
+                },
+                {
+                    id: "5139160",
+                    msg: "pali does not mean working as in functioning",
+                    timestamp: "2019-01-31T12:39:01-05:00",
+                },
+                {
+                    id: "4567664",
+                    msg: "sina nasa lukin.",
+                    timestamp: "2019-01-31T12:41:05-05:00",
+                },
+                {
+                    id: "6880447",
+                    msg: "\u201cjan li soweli\u201d or \u201cjan li nasa\u201d",
+                    timestamp: "2019-01-31T12:42:20-05:00",
+                },
+                {
+                    id: "6198648",
+                    msg: "ona li pini kin.",
+                    timestamp: "2019-01-31T12:43:06-05:00",
+                },
+                {
+                    id: "2532324",
+                    msg: "you could also say \u201cmi ken ala sona e toki sina\u201d",
+                    timestamp: "2019-01-31T12:47:16-05:00",
+                },
+                {
+                    id: "4790249",
+                    msg: "mi moku ala",
+                    timestamp: "2019-01-31T14:00:48-05:00",
+                },
+                {
+                    id: "4637950",
+                    msg: "ona li jan ala",
+                    timestamp: "2019-01-31T14:01:58-05:00",
+                },
+                {
+                    id: "4197574",
+                    msg: "ona li lawa nasa",
+                    timestamp: "2019-01-31T14:02:13-05:00",
+                },
+                {
+                    id: "4952224",
+                    msg: "mi kama pona.",
+                    timestamp: "2019-01-31T14:02:33-05:00",
+                },
+                {
+                    id: "4940795",
+                    msg: "ona ale li ike mi",
+                    timestamp: "2019-01-31T14:06:36-05:00",
+                },
+                {
+                    id: "3938525",
+                    msg: "ni li mute pona or ni li nanpa pona",
+                    timestamp: "2019-01-31T14:10:32-05:00",
+                },
+                {
+                    id: "4548139",
+                    msg: "ni ale li lon ala",
+                    timestamp: "2019-01-31T14:11:39-05:00",
+                },
+                {
+                    id: "2293558",
+                    msg: "ona li sona mute",
+                    timestamp: "2019-01-31T14:11:58-05:00",
+                },
+                {
+                    id: "6116862",
+                    msg: "alternatively mi kin",
+                    timestamp: "2019-01-31T14:12:29-05:00",
+                },
+                {
+                    id: "4637950",
+                    msg: "the current one says \u201cwomen are not human\u201d which is incorrect and offensive",
+                    timestamp: "2019-01-31T14:33:02-05:00",
+                },
+                {
+                    id: "3938376",
+                    msg: "mi wile lape",
+                    timestamp: "2019-01-31T14:46:35-05:00",
+                },
+                {
+                    id: "4763407",
+                    msg: "Wouldn't 'tan seme' be better here?",
+                    timestamp: "2019-02-02T08:09:55-05:00",
+                },
+                {
+                    id: "4606465",
+                    msg: "Wile?",
+                    timestamp: "2019-02-02T12:33:15-05:00",
+                },
+            ];
 
-<script src="js/helper.js"></script>
-<script>
-    var reportData = [{"id": "639893", "msg": "What's keburt?"}, {
-        "id": "4425537",
-        "msg": "Use awen maybe?",
-        "timestamp": "2019-01-30T10:34:54-05:00"
-    }, {
-        "id": "1121324",
-        "msg": "\u201cmi lon e sina\u201d means \u201cI cause you to exist\u201d",
-        "timestamp": "2019-01-31T12:26:49-05:00"
-    }, {
-        "id": "1529685",
-        "msg": "sina toki ala toki lon toki mi\/kepeken toki mi",
-        "timestamp": "2019-01-31T12:27:49-05:00"
-    }, {
-        "id": "2050133",
-        "msg": "it should be pakala or ko jaki",
-        "timestamp": "2019-01-31T12:32:36-05:00"
-    }, {
-        "id": "4844508",
-        "msg": "It should be ken by itself",
-        "timestamp": "2019-01-31T12:34:24-05:00"
-    }, {"id": "3359522", "msg": "ona li kili", "timestamp": "2019-01-31T12:34:57-05:00"}, {
-        "id": "2298741",
-        "msg": "alternatively \u201cni li pona ala\u201d",
-        "timestamp": "2019-01-31T12:35:54-05:00"
-    }, {
-        "id": "5139160",
-        "msg": "pali does not mean working as in functioning",
-        "timestamp": "2019-01-31T12:39:01-05:00"
-    }, {"id": "4567664", "msg": "sina nasa lukin.", "timestamp": "2019-01-31T12:41:05-05:00"}, {
-        "id": "6880447",
-        "msg": "\u201cjan li soweli\u201d or \u201cjan li nasa\u201d",
-        "timestamp": "2019-01-31T12:42:20-05:00"
-    }, {"id": "6198648", "msg": "ona li pini kin.", "timestamp": "2019-01-31T12:43:06-05:00"}, {
-        "id": "2532324",
-        "msg": "you could also say \u201cmi ken ala sona e toki sina\u201d",
-        "timestamp": "2019-01-31T12:47:16-05:00"
-    }, {"id": "4790249", "msg": "mi moku ala", "timestamp": "2019-01-31T14:00:48-05:00"}, {
-        "id": "4637950",
-        "msg": "ona li jan ala",
-        "timestamp": "2019-01-31T14:01:58-05:00"
-    }, {"id": "4197574", "msg": "ona li lawa nasa", "timestamp": "2019-01-31T14:02:13-05:00"}, {
-        "id": "4952224",
-        "msg": "mi kama pona.",
-        "timestamp": "2019-01-31T14:02:33-05:00"
-    }, {"id": "4940795", "msg": "ona ale li ike mi", "timestamp": "2019-01-31T14:06:36-05:00"}, {
-        "id": "3938525",
-        "msg": "ni li mute pona or ni li nanpa pona",
-        "timestamp": "2019-01-31T14:10:32-05:00"
-    }, {"id": "4548139", "msg": "ni ale li lon ala", "timestamp": "2019-01-31T14:11:39-05:00"}, {
-        "id": "2293558",
-        "msg": "ona li sona mute",
-        "timestamp": "2019-01-31T14:11:58-05:00"
-    }, {"id": "6116862", "msg": "alternatively mi kin", "timestamp": "2019-01-31T14:12:29-05:00"}, {
-        "id": "4637950",
-        "msg": "the current one says \u201cwomen are not human\u201d which is incorrect and offensive",
-        "timestamp": "2019-01-31T14:33:02-05:00"
-    }, {"id": "3938376", "msg": "mi wile lape", "timestamp": "2019-01-31T14:46:35-05:00"}, {
-        "id": "4763407",
-        "msg": "Wouldn't 'tan seme' be better here?",
-        "timestamp": "2019-02-02T08:09:55-05:00"
-    }, {"id": "4606465", "msg": "Wile?", "timestamp": "2019-02-02T12:33:15-05:00"}
-    ];
+            let corpus = [];
 
-    let corpus = [];
+            Helper.Data.loadJSON("./data/tp_verses.json").then(function (data) {
+                data.verses.forEach(function (verse) {
+                    let words = verse.toki.split(/[^0-9a-zA-Z]+/);
+                    verse.tokens = words.slice(0, words.length - 1);
+                    verse.lemmas = Helper.Collections.Set.fromArray(
+                        verse.tokens,
+                    );
+                });
+                corpus = data;
 
-    Helper.Data.loadJSON('./data/tp_verses.json').then(function (data) {
-        data.verses.forEach(function (verse) {
-            let words = verse.toki.split(/[^0-9a-zA-Z]+/);
-            verse.tokens = words.slice(0, words.length - 1);
-            verse.lemmas = Helper.Collections.Set.fromArray(verse.tokens);
-        });
-        corpus = data;
+                reportData.forEach(function (report) {
+                    console.log(report, report.id);
 
+                    let verse = corpus.verses.filter(function (v) {
+                        return v.id == report.id;
+                    })[0];
 
-        reportData.forEach(function (report) {
-            console.log(report, report.id);
+                    console.log(verse);
 
-            let verse = corpus.verses.filter(function (v) {
-                return v.id == report.id;
-            })[0];
+                    let rep = Helper.DOM.createElements({
+                        tag: "tr",
+                        children: [
+                            {
+                                tag: "td",
+                                innerHTML:
+                                    '<a href="https://tatoeba.org/eng/sentences/show/' +
+                                    verse.id +
+                                    '" target="_blank">' +
+                                    verse.id +
+                                    "</a>",
+                            },
+                            { tag: "td", innerHTML: verse.eng },
+                            { tag: "td", innerHTML: verse.toki },
+                            { tag: "td", innerHTML: report.msg },
+                        ],
+                    });
 
+                    document.getElementById("reports").appendChild(rep.root);
+                });
 
-            console.log(verse);
+                console.log(corpus);
 
-            let rep = Helper.DOM.createElements({
-                tag: 'tr',
-                children: [
-                    {
-                        tag: 'td',
-                        innerHTML: '<a href="https://tatoeba.org/eng/sentences/show/' + verse.id + '" target="_blank">' + verse.id + '</a>'
-                    },
-                    {tag: 'td', innerHTML: verse.eng},
-                    {tag: 'td', innerHTML: verse.toki},
-                    {tag: 'td', innerHTML: report.msg},
-                ]
+                // find doubles
+                let doubleSet = {};
+                corpus.verses.forEach(function (verse) {
+                    if (doubleSet[verse.eng]) {
+                        return;
+                    }
+
+                    let doubles = corpus.verses.filter(function (v) {
+                        return v.eng === verse.eng;
+                    });
+
+                    if (doubles.length > 1) {
+                        doubleSet[verse.eng] = true;
+                        console.log(doubles);
+
+                        let rep = Helper.DOM.createElements({
+                            tag: "tr",
+                            children: [
+                                {
+                                    tag: "td",
+                                    innerHTML:
+                                        '<a href="https://tatoeba.org/eng/sentences/show/' +
+                                        verse.id +
+                                        '" target="_blank">' +
+                                        verse.id +
+                                        "</a>",
+                                },
+                                { tag: "td", innerHTML: verse.eng },
+                                {
+                                    tag: "td",
+                                    innerHTML: doubles
+                                        .map(function (v) {
+                                            return v.toki;
+                                        })
+                                        .join("<br>"),
+                                },
+                            ],
+                        });
+
+                        document
+                            .getElementById("doubles")
+                            .appendChild(rep.root);
+                    }
+                });
             });
-
-            document.getElementById('reports').appendChild(rep.root);
-        });
-
-        console.log(corpus);
-
-        // find doubles
-        let doubleSet = {};
-        corpus.verses.forEach(function(verse){
-            if (doubleSet[verse.eng]){
-                return;
-            }
-
-            let doubles = corpus.verses.filter(function(v){
-              return v.eng === verse.eng;
-           });
-
-           if (doubles.length>1) {
-               doubleSet[verse.eng] = true;
-               console.log(doubles);
-
-               let rep = Helper.DOM.createElements({
-                   tag: 'tr',
-                   children: [
-                       {
-                           tag: 'td',
-                           innerHTML: '<a href="https://tatoeba.org/eng/sentences/show/' + verse.id + '" target="_blank">' + verse.id + '</a>'
-                       },
-                       {tag: 'td', innerHTML: verse.eng},
-                       {tag: 'td', innerHTML: doubles.map(function(v){return v.toki;}).join('<br>')},
-                   ]
-               });
-
-               document.getElementById('doubles').appendChild(rep.root);
-
-           }
-        });
-
-    });
-
-
-</script>
-
-
-</body>
+        </script>
+    </body>
 </html>
