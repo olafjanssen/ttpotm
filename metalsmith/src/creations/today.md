@@ -52,147 +52,17 @@ While in early references, there is no mention of naming weeks of days of the we
 - 10 - `ilo` - care of appliances and machines (including car and bike)
 
 
+<link rel="stylesheet" href="/tools/nonperclock/css/nonperclock.css">
+<link rel="stylesheet" href="/tools/nonperclock/css/ponacalendar.css">
+<link rel="stylesheet" href="/tools/nonperclock/css/dek-el.css">
+
 <script src="/tools/nonperclock/lib/suncalc.js"></script>
 <script src="/tools/nonperclock/lib/svg.min.js"></script>
 <script src="/tools/nonperclock/js/nonperclock.js"></script>
-
 <script src="/tools/nonperclock/lib/moment.min.js"></script>
 <script src="/tools/nonperclock/js/ponacalendar.js"></script>
-<style>
-    #ponatime {
-    }
-
-    .npc-major, .npc-minor, .npc-patch {
-        vertical-align: middle;
-    }
-
-    .npc-major-sep,
-    .npc-minor-sep {
-    }
-
-    .npc-major-sep:after,
-    .npc-minor-sep:after {
-        content: ':';
-    }
-
-    .npc-patch-sep {
-    }
-
-    .npc-patch-sep:after {
-        content: ' ';
-    }
-
-    .npc-remainder {
-        vertical-align: middle;
-        font-size: 0.7em;
-        opacity: 0.5;
-    }
-
-    .npc-sign {
-        vertical-align: middle;
-    }
-
-    .npc-sign:after {
-        content: '+';
-    }
-
-    .npc-sign[data-npc-sign="-1"]:after {
-        content: '-';
-    }
-</style>
-
-<style>
-        .pona-calendar-widget {
-            font-family: Helvetica, sans-serif;
-            font-size: 0.7em;
-            line-height: 1.5em;
-        }
-
-        .pc-season {
-            display: inline-block;
-            border: 2px solid black;
-            border-radius: 0.4em;
-            margin: 0.5em;
-        }
-
-        .pc-season-title {
-            font-weight: bold;
-            text-align: center;
-        }
-
-        .pc-week {
-            display: block;
-        }
-
-        .pc-day {
-            width: 1.5em;
-            text-align: center;
-            display: inline-block;
-            text-align: center;
-            display: inline-block;
-            background: rgba(255,255,255,0.3);
-            margin: 0.1em;
-        }
-
-        .pc-day.today {
-            background-color: black;
-            color: white;
-        }
-
-        .pc-day.event {
-            background-color: #666;
-            color: white;
-        }
-
-        .pc-season[data-season="0"] {
-            background-color: #FFC001;
-        }
-
-        .pc-season[data-season="1"]{
-            background-color: #F3B084;
-        }
-
-        .pc-season[data-season="2"]{
-            background-color: #BFBFBF;
-        }
-
-        .pc-season[data-season="3"]{
-            background-color: #B4C6E7;
-        }
-
-        .pc-season[data-season="4"]{
-            background-color: #C6E0B4;
-        }
-</style>
-
-<style>
-        .dek, .el {
-            transform: rotate(180deg);
-            display: inline-block;
-        }
-        
-        .dek:after {
-            content: "2";
-        }
-        
-        .el:after {
-            content: "3";
-        }
-        #ponadate .dek, #ponadate .el, #ponatime .dek, #ponatime .el {
-            transform: rotate(180deg) translateY(-0.3em);
-        }
-</style>
-
-<script>
-    const ponaDate = PonaCalendar.ponaDateFromTimestamp(new Date().getTime());
-    document.getElementById('ponadate').innerHTML = ponaDate.formatPona();
-    document.getElementById('ponatheme').innerHTML = ponaDate.dayTheme();
-    let widget = new PonaCalendar.PonaCalendarWidget(document.getElementById('ponacalendar'), PonaCalendar.ponaDateFromTimestamp(new Date().getTime()));
-
-    setInterval(function () {
-        document.getElementById('ponatime').innerHTML = NonPerClock.getFormattedTime({formatType: 'html'});
-    }, 200);
-</script>
+<script src="/tools/nonperclock/js/nonperclock-init.js"></script>
+<script src="/tools/nonperclock/js/ponacalendar-init.js"></script>
 
 <script>
 

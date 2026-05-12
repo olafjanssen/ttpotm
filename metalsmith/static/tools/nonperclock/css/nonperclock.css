@@ -1,0 +1,41 @@
+/* NonPerClock styling */
+#ponatime {
+}
+
+.npc-major, .npc-minor, .npc-patch {
+    vertical-align: middle;
+}
+
+.npc-major-sep,
+.npc-minor-sep {
+}
+
+.npc-major-sep:after,
+.npc-minor-sep:after {
+    content: ':';
+}
+
+.npc-patch-sep {
+}
+
+.npc-patch-sep:after {
+    content: ' ';
+}
+
+.npc-remainder {
+    vertical-align: middle;
+    font-size: 0.7em;
+    opacity: 0.5;
+}
+
+.npc-sign {
+    vertical-align: middle;
+}
+
+.npc-sign:after {
+    content: '+';
+}
+
+.npc-sign[data-npc-sign="-1"]:after {
+    content: '-';
+}

@@ -1,0 +1,62 @@
+/* PonaCalendar widget styling */
+.pona-calendar-widget {
+    font-family: Helvetica, sans-serif;
+    font-size: 0.7em;
+    line-height: 1.5em;
+}
+
+.pc-season {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 0.4em;
+    margin: 0.5em;
+}
+
+.pc-season-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.pc-week {
+    display: block;
+}
+
+.pc-day {
+    width: 1.5em;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    display: inline-block;
+    background: rgba(255,255,255,0.3);
+    margin: 0.1em;
+}
+
+.pc-day.today {
+    background-color: black;
+    color: white;
+}
+
+.pc-day.event {
+    background-color: #666;
+    color: white;
+}
+
+.pc-season[data-season="0"] {
+    background-color: #FFC001;
+}
+
+.pc-season[data-season="1"]{
+    background-color: #F3B084;
+}
+
+.pc-season[data-season="2"]{
+    background-color: #BFBFBF;
+}
+
+.pc-season[data-season="3"]{
+    background-color: #B4C6E7;
+}
+
+.pc-season[data-season="4"]{
+    background-color: #C6E0B4;
+}

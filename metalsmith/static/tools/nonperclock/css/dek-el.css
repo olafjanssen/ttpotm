@@ -1,0 +1,28 @@
+/* Dek and El character styling for dozenal numbers */
+.dek,
+.el {
+    transform: rotate(180deg);
+    display: inline-block;
+}
+
+.dek:after {
+    content: "2";
+}
+
+.el:after {
+    content: "3";
+}
+
+#ponadate .dek,
+#ponadate .el,
+#ponatime .dek,
+#ponatime .el {
+    transform: rotate(180deg) translateY(-0.3em);
+}
+
+#ponadate.normal .dek,
+#ponadate.normal .el,
+#ponatime.normal .dek,
+#ponatime.normal .el {
+    transform: rotate(180deg);
+}
