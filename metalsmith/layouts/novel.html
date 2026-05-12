@@ -37,13 +37,19 @@
     <div class="container">
         <div class="jumbotron row p-3 p-md-5 text-dark rounded bg-transparent" id="main-jumbo">
             <div class="col-md-6 px-0">
-                <img src="img/ttpotm.png" class="img-fluid" alt="TTPotM Collective">
+                <a href="/"><img src="img/ttpotm.png" class="img-fluid" alt="TTPotM Collective"></a>
                 <h1>{{ title }}</h1>
                 <h2>{{ subtitle }}</h2>
                 <p>{{ blurb }}</p>
+                <p>Available as epub and paperback on, e.g.:</p>
+                <p><a class="cta" href="https://www.kobo.com/search?query=olaf%20ta%20janssen&fclanguages=en">Kobo</a>
+                <a class="cta" href="https://www.amazon.com/s?k=olaf%20t.a.%20janssen">Amazon</a>
+                <a class="cta" href="https://www.bravenewbooks.nl/site/userwebsite/index/id/olaf.janssen">BraveNewBooks</a>
+                <a class="cta" href="https://www.bol.com/nl/nl/b/olaf-t-a-janssen/609102911/">Bol</a>
+                </p>
             </div>
             <div class="col-md-6 px-0 align-self-center">
-                <div class="book-card-img">
+                <class="book-card-img">
                     <div class="book-3d">
                     <div class="book-3d__inner">
                         <img class="book-3d__cover" src="{{ cover }}" alt="{{ title }}">
@@ -60,27 +66,18 @@
                 </div>
 
                 <aside class="col-md-4 blog-sidebar">
-                    <div class="card flex-md-row tp-card-border mb-2">
-                        <div class="card-body">
-                            <a class="text-dark" href="games/">
-                                <h3 class="card-title"><code>ilo musi</code> ~ games</h3>
-                                <p class="card-text">Enter the universe in a Point & Click Adventure fashion; and play
-                                    the first
-                                    escape game episode now, linked to the novel.</p>
-                                <div class="my-card-img" style="background-image: url(img/topic-home.png);"></div>
-                            </a>
-                        </div>
+                    <h3>Keywords</h3>
+                    <div class="keywords">
+                        {{#each keywords}}
+                        <span class="keyword-tag">#{{this}}</span>
+                        {{/each}}
                     </div>
 
                     <h3>About the author</h3>
                     <img src="img/self-portrait-01.png" alt="author"
                         class="img-thumbnail border-0 col-md-10 col-offset-2">
-                    <p><strong>Olaf Janssen</strong> is an author like he is many other things. With a PhD in
-                        nanophysics and
-                        experience as a developer and in teaching all sorts of things, his favorite pass-time is to be
-                        confused and
-                        to translate that into words and more.</p>
-                    <p>He is not The Toki Ponist, but he could be.</p>
+                    <p><b>Olaf T.A. Janssen</b> is a Dutch educator, storyteller, with a PhD in computational optical nanophysics, and a disloyal Auditor Apparent of the Collège de ’Pataphysique&mdash;because sometimes the best way to explore reality is to question it. For over a decade, he has taught computer science and coached flurries of students. He blends analytical rigor with a passion for game design, dabbling in both real and invented languages.</p>
+                    <p>When he’s not writing, you might find him bumping doorframes as a left-handed, red-green color-blind, 2 meters tall giant, or pondering the quirks of aphantasia and AuDHD. His stories, like his mind, often stray from the expected&mdash;embracing the wild, the flawed, and the wonderfully human.</p>
                 </aside>
             </div>
 
