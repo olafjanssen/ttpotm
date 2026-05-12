@@ -7,7 +7,7 @@
     <script type="application/javascript">
         var _paq = window._paq = window._paq || [];
         /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        // Call disableCookies before calling trackPageView 
+        // Call disableCookies before calling trackPageView
         _paq.push(['disableCookies']);
         _paq.push(['trackPageView']);
         _paq.push(['enableLinkTracking']);
@@ -104,11 +104,11 @@
                 {{{ contents }}}
 
                 {{#if previous}}
-                    <p><a href="{{ previous.url }}{{ previous.path }}/">Read a newer koan</a> (<em>{{ previous.description }}</em>)</p>
+                    <p><a href="{{ previous.path }}/">Read a newer koan</a> (<em>{{ previous.description }}</em>)</p>
                 {{/if}}
-                
+
                 {{#if next}}
-                    <p><a href="{{ next.url }}{{ next.path }}/">Read an older koan</a> (<em>{{ next.description }}</em>)</p>
+                    <p><a href="{{ next.path }}/">Read an older koan</a> (<em>{{ next.description }}</em>)</p>
                 {{/if}}
             </div>
         </article>
@@ -125,14 +125,14 @@
             </script>
         </span>
         <span class="navbar-text self-right">
-            <a class="" href="https://www.facebook.com/gaming/ttpotm">Facebook</a> | 
-            <a class="" href="https://twitter.com/TTPotM" target="_blank">Twitter</a> | 
+            <a class="" href="https://www.facebook.com/gaming/ttpotm">Facebook</a> |
+            <a class="" href="https://twitter.com/TTPotM" target="_blank">Twitter</a> |
             <a class="" href="https://www.instagram.com/ttpotm/" target="_blank">Instagram</a>
         </span>
         <span class="navbar-text self-right">
             The Toki Ponist on the Mountain by <a href="https://awokenwell.com" target="_blank">Awoken Well</a>, 2021
         </span>
-    </div>    
+    </div>
 </body>
 
 </html>

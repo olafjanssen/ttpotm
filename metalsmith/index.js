@@ -62,7 +62,11 @@ Metalsmith(__dirname)
       mangle: true,
     }),
   )
-  .use(permalinks())
+  .use(
+    permalinks({
+      pattern: ":dir/:basename",
+    }),
+  )
   .use(alias({ netlify: false }))
   .use(
     sitemap({

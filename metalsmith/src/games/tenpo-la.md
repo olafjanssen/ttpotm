@@ -18,4 +18,4 @@ I created this simple game during an Inktober-like challenge for myself. In Octo
 
 Play online for free.
 
-<a href="https://nullelement.itch.io/tenpo-la"><img src="../../img/game/itch_cookie-free-tenpo-la.png" width="552" height="167" style="image-rendering: -webkit-optimize-contrast;" alt="Play Tenpo La game on Itch.io"></a>
+<a href="https://nullelement.itch.io/tenpo-la"><img src="img/game/itch_cookie-free-tenpo-la.png" width="552" height="167" style="image-rendering: -webkit-optimize-contrast;" alt="Play Tenpo La game on Itch.io"></a>

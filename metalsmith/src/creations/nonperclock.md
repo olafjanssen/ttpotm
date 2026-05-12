@@ -51,12 +51,12 @@ While in early references, there is no mention of naming weeks of days of the we
 - 10 - `ilo` - care of appliances and machines (including car and bike)
 
 
-<script src="../../tools/nonperclock/lib/suncalc.js"></script>
-<script src="../../tools/nonperclock/lib/svg.min.js"></script>
-<script src="../../tools/nonperclock/js/nonperclock.js"></script>
+<script src="tools/nonperclock/lib/suncalc.js"></script>
+<script src="tools/nonperclock/lib/svg.min.js"></script>
+<script src="tools/nonperclock/js/nonperclock.js"></script>
 
-<script src="../../tools/nonperclock/lib/moment.min.js"></script>
-<script src="../../tools/nonperclock/js/ponacalendar.js"></script>
+<script src="tools/nonperclock/lib/moment.min.js"></script>
+<script src="tools/nonperclock/js/ponacalendar.js"></script>
 
 <script>
     const ponaDate = PonaCalendar.ponaDateFromTimestamp(new Date().getTime());
