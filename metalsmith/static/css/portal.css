@@ -26,6 +26,10 @@ html {
     text-decoration: underline;
 }
 
+main {
+    margin-bottom: 4em;
+}
+
 /*
   Fonts
  */

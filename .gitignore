@@ -4,3 +4,4 @@ raw
 dist
 config.json
 .DS_Store
+.obsidian
