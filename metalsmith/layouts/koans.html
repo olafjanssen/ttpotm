@@ -34,45 +34,33 @@
 </head>
 
 <body class="typeset">
-    <div class="container">
-        <div class="jumbotron row p-3 p-md-5 text-dark rounded bg-transparent" id="main-jumbo">
-            <div class="col-md-6 px-0">
-                <a href=""><img src="img/ttpotm.png" class="img-fluid" alt="TTPotM Collective"></a>
-            </div>
-            <div class="col-md-6 px-0 align-self-center">
-                <div class="game-card-img">
-                    <div class="game-3d">
-                    <div class="game-3d__inner">
-                        <img class="game-3d__cover" src="{{ cover }}" alt="{{ title }}">
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <a href=""><img id="title-img" src="img/ttpotm.png" alt="TTPotM Collective"></a>
 
         <main role="main" class="container">
-            <div class="row">
-                <div class="col-md-8 content-main">
-                    {{{contents}}}
+            {{{contents}}}
+
+            <div class="container tp-panel">
+                <h2><code>toki nasin nasa</code><span> ~ koans</span></h2>
+                <div class="card-columns">
+                    {{#each collections.tokiNasinNasa}}{{#if tag}}
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body">
+                            <a class="text-dark" href="creations/tokinasinnasa/{{ tag }}/">
+                                <h4 class="card-title">{{ title }}</h4>
+                                <p class="card-text">{{{ description }}}</p>
+                            </a>
+                        </div>
+                    </div>
+                    {{/if}}{{/each}}
                 </div>
-
-                <aside class="col-md-4 blog-sidebar">
-                    <h3>Screenshots</h3>
-                    {{#each screenshots}}
-                    <img src="img/game/{{ this }}" alt="game screenshot" class="img-thumbnail">
-                    {{/each}}
-                </aside>
             </div>
-    </main>
-
-    </div>
+        </main>
         <div class="nav-bar navbar-dark p-3 mu-3" style="background-color: black;">
             <span class="navbar-text">
                 <a class="nav-link" href="about/disclaimer/">Disclaimer | disclosure | self-critique</a>
             </span>
             <span class="navbar-text self-right">
-                <a href="https://awokenwellbody>.com">Awoken Well</a> (2026)
+                <a href="https://awokenwell.com">Awoken Well</a> (2026)
             </span>
         </div>
-</body>
 </html>
