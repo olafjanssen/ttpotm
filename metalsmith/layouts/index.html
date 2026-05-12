@@ -43,6 +43,7 @@
             <div class="col-md-7 align-self-center">
                 <p class="lead">
                     Presenting a collective of voices from an omniverse. Their stories don’t need to exist—but do anyway. From the footnotes of reality, we acknowledge: mountains are lonely, and gurus need company.</p>
+                <blockquote><p><span id="ponadate"></span> | <code id="ponatheme"></code> | <span id="ponatime"></span></p></blockquote>
             </div>
             <div class="col-md-12">
                 <p><b>Tipi</b> &mdash; The Toki Ponist on the Mountain,
@@ -75,10 +76,10 @@
                             <h3 class="card-title">{{ title }}</h3>
                             <p class="card-text">{{ human_status }}</p>
                             {{#if epub}}
-                            <a href="{{ epub }}"><b>epub</b></a> |
+                            <a target="_blank" href="{{ epub }}"><b>epub</b></a> |
                             {{/if}}
                             {{#if paperback}}
-                            <a href="{{ paperback }}"><b>paperback</b></a>
+                            <a target="_blank" href="{{ paperback }}"><b>paperback</b></a>
                             {{/if}}
                     </div>
                     </a>
@@ -146,3 +147,144 @@
         </span>
     </div>
 </html>
+
+<script src="/tools/nonperclock/lib/suncalc.js"></script>
+<script src="/tools/nonperclock/lib/svg.min.js"></script>
+<script src="/tools/nonperclock/js/nonperclock.js"></script>
+
+<script src="/tools/nonperclock/lib/moment.min.js"></script>
+<script src="/tools/nonperclock/js/ponacalendar.js"></script>
+<style>
+    #ponatime {
+    }
+
+    .npc-major, .npc-minor, .npc-patch {
+        vertical-align: middle;
+    }
+
+    .npc-major-sep,
+    .npc-minor-sep {
+    }
+
+    .npc-major-sep:after,
+    .npc-minor-sep:after {
+        content: ':';
+    }
+
+    .npc-patch-sep {
+    }
+
+    .npc-patch-sep:after {
+        content: ' ';
+    }
+
+    .npc-remainder {
+        vertical-align: middle;
+        font-size: 0.7em;
+        opacity: 0.5;
+    }
+
+    .npc-sign {
+        vertical-align: middle;
+    }
+
+    .npc-sign:after {
+        content: '+';
+    }
+
+    .npc-sign[data-npc-sign="-1"]:after {
+        content: '-';
+    }
+</style>
+
+<style>
+        .pona-calendar-widget {
+            font-family: Helvetica, sans-serif;
+            font-size: 0.7em;
+            line-height: 1.5em;
+        }
+
+        .pc-season {
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 0.4em;
+            margin: 0.5em;
+        }
+
+        .pc-season-title {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .pc-week {
+            display: block;
+        }
+
+        .pc-day {
+            width: 1.5em;
+            text-align: center;
+            display: inline-block;
+            text-align: center;
+            display: inline-block;
+            background: rgba(255,255,255,0.3);
+            margin: 0.1em;
+        }
+
+        .pc-day.today {
+            background-color: black;
+            color: white;
+        }
+
+        .pc-day.event {
+            background-color: #666;
+            color: white;
+        }
+
+        .pc-season[data-season="0"] {
+            background-color: #FFC001;
+        }
+
+        .pc-season[data-season="1"]{
+            background-color: #F3B084;
+        }
+
+        .pc-season[data-season="2"]{
+            background-color: #BFBFBF;
+        }
+
+        .pc-season[data-season="3"]{
+            background-color: #B4C6E7;
+        }
+
+        .pc-season[data-season="4"]{
+            background-color: #C6E0B4;
+        }
+</style>
+
+<style>
+        .dek, .el {
+            transform: rotate(180deg);
+            display: inline-block;
+        }
+
+        .dek:after {
+            content: "2";
+        }
+
+        .el:after {
+            content: "3";
+        }
+        #ponadate .dek, #ponadate .el, #ponatime .dek, #ponatime .el {
+            transform: rotate(180deg);
+        }
+</style>
+
+<script>
+    const ponaDate = PonaCalendar.ponaDateFromTimestamp(new Date().getTime());
+    document.getElementById('ponadate').innerHTML = ponaDate.formatPona();
+    document.getElementById('ponatheme').innerHTML = ponaDate.dayTheme();
+
+    setInterval(function () {
+        document.getElementById('ponatime').innerHTML = NonPerClock.getFormattedTime({formatType: 'html'});
+    }, 200);
+</script>

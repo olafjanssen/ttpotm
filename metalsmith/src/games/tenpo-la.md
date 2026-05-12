@@ -12,7 +12,7 @@ screenshots: ["tenpo-la-1.jpg","tenpo-la-2.jpg","tenpo-la-3.jpg","tenpo-la-4.jpg
 
 *Tenpo La...* (Once upon a time...) is a small, sweet, and easy clicky-touchy puzzle game in several shades of grey and gray. It comprises 25 single-screen levels and a larger 3-screen Point & Click Adventure game level to keep you, your toddlers, and (pre)-schoolers off the streets for a bit.
 
-I created this simple game during an Inktober-like challenge for myself. In October 2021, I turned a daily sketch on my Remarkable 2 into a small interactive level that my two-year-old girl and older sons can play alone or together on their tablet. Because I reserved only about 2 hours a day to work on both the sketch and coding of the level, the result is what it is. After October, I only removed a few bugs and added some of my own sounds and music to complete the peachy experience.
+Born from an Inktober-like challenge in October 2021, each daily Remarkable 2 sketch became an interactive level. With about two hours daily for both art and coding, the game offers a simple, accessible experience. After the initial month, a few bugs were fixed and original sounds and music were added to complete the peachy experience. Inspired by and to the enjoyment of the author's then two-year-old ginger girl and her two bigger brothers.
 
 ## Download and Play
 
