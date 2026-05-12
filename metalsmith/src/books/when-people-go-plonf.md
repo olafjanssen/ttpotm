@@ -14,7 +14,7 @@ blurb: "People vanish plonf. Institutions shrug. One ragtag group risks everythi
 keywords: [satire, pataphysics, speculative, mystery]
 ---
 
-<div class="tp-panel" style="padding: 0 1em 1em;">
+<div class="tp-panel" style="padding: 0 1em 0.5em;">
 <h2><code>pan lili</code><span> ~ snippet</span></h2>
 
 **"_Someone went missing right next door; exemplary coincidences must

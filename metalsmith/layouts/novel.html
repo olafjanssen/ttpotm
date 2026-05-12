@@ -40,12 +40,17 @@
                 <a href="/"><img src="img/ttpotm.png" class="img-fluid" alt="TTPotM Collective"></a>
                 <h1>{{ title }}</h1>
                 <h2>{{ subtitle }}</h2>
+                {{#if blurb }}
                 <p>{{ blurb }}</p>
                 <p>Available as epub and paperback on, e.g.:</p>
-                <p><a class="cta" href="https://www.kobo.com/search?query=olaf%20ta%20janssen&fclanguages=en">Kobo</a>
-                <a class="cta" href="https://www.amazon.com/s?k=olaf%20t.a.%20janssen">Amazon</a>
-                <a class="cta" href="https://www.bravenewbooks.nl/site/userwebsite/index/id/olaf.janssen">BraveNewBooks</a>
-                <a class="cta" href="https://www.bol.com/nl/nl/b/olaf-t-a-janssen/609102911/">Bol</a>
+                {{else}}
+                <p>Check out earlier published work as epub and paperback on, e.g.:</p>
+                {{/if}}
+
+                <p><a class="cta" target="_blank" href="https://www.kobo.com/search?query=olaf%20ta%20janssen&fclanguages=en">Kobo</a>
+                <a class="cta" target="_blank" href="https://www.amazon.com/s?k=olaf%20t.a.%20janssen">Amazon</a>
+                <a class="cta" target="_blank" href="https://www.bravenewbooks.nl/site/userwebsite/index/id/olaf.janssen">BraveNewBooks</a>
+                <a class="cta" target="_blank" href="https://www.bol.com/nl/nl/b/olaf-t-a-janssen/609102911/">Bol</a>
                 </p>
             </div>
             <div class="col-md-6 px-0 align-self-center">
@@ -66,12 +71,14 @@
                 </div>
 
                 <aside class="col-md-4 blog-sidebar">
+                    {{#if keywords }}
                     <h3>Keywords</h3>
                     <div class="keywords">
                         {{#each keywords}}
                         <span class="keyword-tag">#{{this}}</span>
                         {{/each}}
                     </div>
+                    {{/if}}
 
                     <h3>About the author</h3>
                     <img src="img/self-portrait-01.png" alt="author"
@@ -88,8 +95,6 @@
                 <a class="nav-link" href="about/disclaimer/">Disclaimer | disclosure | self-critique</a>
             </span>
             <span>
-                <!--<script type='application/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
-                <script type='application/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#46b798', 'W7W4Y6U0');kofiwidget2.draw();</script>-->
             </span>
             <span class="navbar-text self-right">
             </span>
