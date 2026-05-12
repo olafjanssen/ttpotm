@@ -5,6 +5,7 @@ description: "A short escape room puzzle adventure about entering your home."
 thumb: "img/game/cominghome-room.jpg"
 cover: "img/game/cominghome-room.jpg"
 category: games
+screenshots: ["cominghome-mainmenu.jpg", "cominghome-room.jpg", "cominghome-tokiponizer.jpg", "cominghome-mirror.jpg", "cominghome-closeup.jpg"]
 ---
 
 # Coming Home
@@ -24,17 +25,3 @@ Take a first visual and interactive dive into the universe of The Toki Ponist on
 Play the original first part for free here:
 
 <a href="https://nullelement.itch.io/ttpotm-coming-home"><img src="../../img/game/itch_cookie_free_placeholder.png" width="552" height="167" style="image-rendering: -webkit-optimize-contrast;" alt="Play TTPotM game on Itch.io"></a>
-
-Now the time is ripe to release, step by step, pieces of the novel and new episodes of this game.
-
-### Episodes 1 to N
-
-Each will tell a part of the tale of The Toki Ponist on the Mountain and the other characters in the universe. With each episode, the game engine will advance and my experience will grow, resulting in:
-
-* better and more elaborate (color!) drawings and animations
-* increasingly intricate and creative puzzles in more locations than before
-* a deeper dive into the philosophy of the Toki Ponist
-* a stronger grasp of Toki Pona language
-* hopefully better music, or at least something that can be called music
-
-In the end, the game will not only be about following a storyline but will also serve as a testament to my growing experience and views on life.

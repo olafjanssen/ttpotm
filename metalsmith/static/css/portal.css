@@ -419,6 +419,10 @@ article p > img {
     max-width: 300px;
 }
 
+.jumbotron .game-3d {
+    max-width: 600px;
+}
+
 .book-3d__inner {
     position: relative;
     transform-style: preserve-3d;
@@ -605,4 +609,9 @@ article p > img {
 blockquote {
     text-align: center;
     margin: 0 2em;
+}
+
+ul {
+    margin: 1em 0 1em 2em;
+    line-height: 1.5em;
 }

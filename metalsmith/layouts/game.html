@@ -3,37 +3,15 @@
 
 <head>
     <script>document.write('<base href="'+ (window.location.hostname === 'olafjanssen.github.io' ? '/ttpotm/' : '/') + '">');</script>
-    <!-- Matomo -->
-    <script type="application/javascript">
-        var _paq = window._paq = window._paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        // Call disableCookies before calling trackPageView 
-        _paq.push(['disableCookies']);
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function () {
-            var u = "//ttpotm.com/matomo/";
-            _paq.push(['setTrackerUrl', u + 'matomo.php']);
-            _paq.push(['setSiteId', '1']);
-            var d = document,
-                g = d.createElement('script'),
-                s = d.getElementsByTagName('script')[0];
-            g.type = 'application/javascript';
-            g.async = true;
-            g.src = u + 'matomo.js';
-            s.parentNode.insertBefore(g, s);
-        })();
-    </script>
-    <!-- End Matomo Code -->
     <title>
-        {{ title }}
+        TTPotM - {{ title }}
     </title>
     <meta name="description" content="{{ description }}">
 
     <meta property="og:title" content="{{ title }}">
     <meta property="og:type" content="article">
     <meta property="og:image" content="{{url}}img/{{ thumb }}">
-    <meta property="og:site_name" content="The Toki Ponist on the Mountain">
+    <meta property="og:site_name" content="TTPotM">
     <meta property="og:description" content="{{ description }}">
     <meta property="og:url" content="{{ url }}{{ path }}/">
 
@@ -58,22 +36,17 @@
 <body class="typeset">
     <div class="container">
         <div class="jumbotron row p-3 p-md-5 text-dark rounded bg-transparent" id="main-jumbo">
-            <div class="col-md-6 px-0"><a href="./"><img src="img/title-01.png" class="img-fluid"
-                        alt="The Toki Ponist on the Mountain Logo"></a></div>
+            <div class="col-md-6 px-0">
+                <a href="/"><img src="img/ttpotm.png" class="img-fluid" alt="TTPotM Collective"></a>
+            </div>
             <div class="col-md-6 px-0 align-self-center">
-                <p class="lead">
-                    Everybody needs a guru. Therefore, I need one too. Fortune has it that I am one, so I decided to be
-                    my
-                    own guru. In games, novels, and scriptures it will be unveiled, one step at a time, how I became
-                    <strong>The Toki Ponist on the Mountain</strong>.
-                </p>
-                <p class="lead">You have reached the 'game' entrance, explore the rest <a href="./">here</a>.</p>
-                <script type='application/javascript' src='https://ko-fi.com/widgets/widget_2.js'>
-                </script>
-                <script type='application/javascript'>
-                    kofiwidget2.init('Support Me on Ko-fi', '#46b798', 'W7W4Y6U0');
-                    kofiwidget2.draw();
-                </script>
+                <div class="game-card-img">
+                    <div class="game-3d">
+                    <div class="game-3d__inner">
+                        <img class="game-3d__cover" src="{{ cover }}" alt="{{ title }}">
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -84,35 +57,11 @@
                 </div>
 
                 <aside class="col-md-4 blog-sidebar">
-                    <div class="card flex-md-row tp-card-border mb-2">
-                        <div class="card-body">
-                            <a class="text-dark" href="novels/">
-                                <h3 class="card-title"><code>lipu mute</code> ~ novel</h3>
-                                <p class="card-text">Follow the progress of the origin story of The Toki Ponist on the
-                                    Mountain
-                                    in the
-                                    upcoming novel, linked to the adventure game.</p>
-                                <div class="my-card-img"
-                                    style="background-image: url(img/wanderlust-girl-witha-view.png);"></div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <h3>Screenshots<br>Coming Home</h3>
-                    <img src="img/game/cominghome-mainmenu.jpg" alt="coming home main menu" class="img-thumbnail">
-                    <img src="img/game/cominghome-room.jpg" alt="coming home room" class="img-thumbnail">
-                    <img src="img/game/cominghome-tokiponizer.jpg" alt="coming home toki ponizer"
-                        class="img-thumbnail">
-                    <img src="img/game/cominghome-mirror.jpg" alt="coming home mirror" class="img-thumbnail">
-                    <img src="img/game/cominghome-closeup.jpg" alt="coming home closeup" class="img-thumbnail">
-
-                    <h3>Screenshots<br>Tenpo La</h3>
-                    <img src="img/game/tenpo-la-1.jpg" alt="tenpo la under water" class="img-thumbnail">
-                    <img src="img/game/tenpo-la-2.jpg" alt="tenpo la balloon" class="img-thumbnail">
-                    <img src="img/game/tenpo-la-3.jpg" alt="tenpo la puzzle"
-                        class="img-thumbnail">
-                    <img src="img/game/tenpo-la-4.jpg" alt="tenpo la memory" class="img-thumbnail">
-                    <img src="img/game/tenpo-la-5.jpg" alt="tenpo la pnc" class="img-thumbnail">
+                    <h3>Screenshots</h3>
+                    {{#each screenshots}}
+                    <img src="img/game/{{ this }}" alt="game screenshot" class="img-thumbnail">
+                    {{/each}}
+                </aside>
             </div>
 
             </aside>
