@@ -24,4 +24,4 @@ Take a first visual and interactive dive into the universe of The Toki Ponist on
 
 Play the original first part for free here:
 
-<a href="https://nullelement.itch.io/ttpotm-coming-home"><img src="img/game/itch_cookie_free_placeholder.png" width="552" height="167" style="image-rendering: -webkit-optimize-contrast;" alt="Play TTPotM game on Itch.io"></a>
+<a href="https://nullelement.itch.io/ttpotm-coming-home"><img src="img/game/itch_cookie_free_placeholder.png" width="552" max-height="167" style="image-rendering: -webkit-optimize-contrast;max-width:100%;" alt="Play TTPotM game on Itch.io"></a>

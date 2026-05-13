@@ -18,4 +18,4 @@ Born from an Inktober-like challenge in October 2021, each daily Remarkable 2 sk
 
 Play online for free.
 
-<a href="https://nullelement.itch.io/tenpo-la"><img src="img/game/itch_cookie-free-tenpo-la.png" width="552" height="167" style="image-rendering: -webkit-optimize-contrast;" alt="Play Tenpo La game on Itch.io"></a>
+<a href="https://nullelement.itch.io/tenpo-la"><img src="img/game/itch_cookie-free-tenpo-la.png" width="552" max-height="167" style="image-rendering: -webkit-optimize-contrast;max-width:100%;" alt="Play Tenpo La game on Itch.io"></a>

@@ -585,8 +585,9 @@ article p > img {
     font-family:
         SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
         "Courier New", monospace;
-    margin: 0 0.25em;
+    margin: 0 0.25em 0.5em 0;
     border-radius: 0.5em;
+    display: inline-block;
 }
 
 /* Keywords tags */
@@ -614,4 +615,37 @@ blockquote {
 ul {
     margin: 1em 0 1em 2em;
     line-height: 1.5em;
+}
+
+@media (max-width: 767.98px) {
+    .col-md-1,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-fluid {
+        max-width: 50%;
+        margin-bottom: 1em;
+    }
+
+    .cta {
+        font-size: 0.8em;
+    }
+
+    .jumbotron .book-3d {
+        max-width: 150px;
+        margin-top: 2em;
+    }
 }
