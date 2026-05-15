@@ -10,6 +10,7 @@ state: "published"
 order: 1
 paperback: https://www.bravenewbooks.nl/books/22064559
 epub: https://www.bravenewbooks.nl/books/22061533
+itchio: https://nullelement.itch.io/when-people-go-plonf
 blurb: "People vanish plonf. Institutions shrug. One ragtag group risks everything for answers. A darkly funny, speculative mystery where human promises and pataphysics collide\u2014and nothing is as it seems."
 keywords: [satire, pataphysics, speculative, mystery]
 ---

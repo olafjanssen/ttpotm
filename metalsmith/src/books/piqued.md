@@ -11,6 +11,7 @@ state: published
 order: 2
 paperback: https://www.bravenewbooks.nl/books/22049712
 epub: https://www.bravenewbooks.nl/books/22043434
+itchio: https://nullelement.itch.io/piqued
 blurb: "A guru with no memory, a child on the run, and an AI that learned to speak collide in this darkly comic adventure. Satire meets speculative thriller in a story for fans of conlangs, AuDHD voices, and existential stakes."
 keywords: [satire, enlightenment, conlangs, adventure, AI, mountains, AuDHD]
 ---
